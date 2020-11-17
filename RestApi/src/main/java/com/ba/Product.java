@@ -1,3 +1,5 @@
+package com.ba;
+
 import javax.persistence.*;
 
 

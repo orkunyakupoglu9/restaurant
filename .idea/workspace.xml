@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="98697270-d339-4a74-8ac9-7494b005b221" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/RestApi/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/src/main/java/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/src/main/java/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/src/main/java/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/ProductRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/src/main/java/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/ProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ba/Run.java" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Run.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,8 +34,8 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
@@ -93,7 +88,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1605621494687</updated>
-      <workItem from="1605621497636" duration="6878000" />
+      <workItem from="1605621497636" duration="9946000" />
     </task>
     <task id="LOCAL-00001" summary="RestApi deneme1">
       <created>1605641986578</created>
@@ -102,7 +97,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605641986578</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="RestApi deneme2">
+      <created>1605642263523</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1605642263523</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -121,6 +123,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="RestApi deneme1" />
-    <option name="LAST_COMMIT_MESSAGE" value="RestApi deneme1" />
+    <MESSAGE value="RestApi deneme2" />
+    <option name="LAST_COMMIT_MESSAGE" value="RestApi deneme2" />
   </component>
 </project>

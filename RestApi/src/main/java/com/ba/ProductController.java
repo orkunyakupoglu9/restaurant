@@ -5,6 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 
 
 @CrossOrigin(origins = "http://localhost:3000")
@@ -41,6 +42,28 @@ public class ProductController {
         service.deleteProduct(id);
 
     }
+
+    @PutMapping("/update/{id}")
+    public Product updateProduct(@PathVariable Long id,@RequestBody Product product)
+    {
+        Optional<Product> optionalProduct= service.getAllProducts().stream().filter(product1->product.getId()==id).findAny();
+
+        if(optionalProduct==null)
+        {
+            System.out.println("cannot find the id");
+            return null;
+        }
+
+        optionalProduct.get().setName(product.getName());
+        optionalProduct.get().setDescription(product.getDescription());
+        optionalProduct.get().setPrice(product.getPrice());
+
+
+        return product;
+
+    }
+
+
 
 
 

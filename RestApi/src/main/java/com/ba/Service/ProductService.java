@@ -1,11 +1,12 @@
-package com.ba;
+package com.ba.Service;
 
-import com.ba.Product;
-import com.ba.ProductRepository;
+import com.ba.Entities.Product;
+import com.ba.Repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.PathVariable;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -38,6 +39,35 @@ public class ProductService {
 
         return "ID "+id+" is deleted";
     }
+
+
+    public List<String> listAllCategories()
+    {
+        List<String> categoryList=new ArrayList<>();
+
+        categoryList=(repository.getAllCategories());
+
+
+        return categoryList;
+
+    }
+
+    public List<Product>  listProductByCategory(String categoryName)
+    {
+        List<Product> productByCategory= new ArrayList<>();
+
+        productByCategory=repository.findCategory(categoryName);
+
+        return productByCategory;
+
+    }
+
+
+
+
+
+
+
 
 
 }

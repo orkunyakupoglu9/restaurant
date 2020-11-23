@@ -1,6 +1,6 @@
 
-b
-java:S1854."@Remove this useless assignment to local variable "categoryList".(Û £âÿÿÿÿÿ8ä“ÂÚİ.
-{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(áïã„øÿÿÿÿ8ÏÛÛÙİ.
-g
-java:S18549"ERemove this useless assignment to local variable "productByCategory".(˜é¦ıÿÿÿÿ8ã÷ÁÛİ.
+y	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(áïã„øÿÿÿÿ8ÏÛÛÙİ.
+e
+java:S1854"ERemove this useless assignment to local variable "productByCategory".(˜é¦ıÿÿÿÿ8ã÷ÁÛİ.
+`
+java:S1854"@Remove this useless assignment to local variable "categoryList".(Û £âÿÿÿÿÿ8ä“ÂÚİ.

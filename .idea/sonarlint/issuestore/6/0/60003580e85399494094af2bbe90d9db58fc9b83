@@ -1,0 +1,10 @@
+
+o	java:S100>"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(„šŠ¸ÿÿÿÿÿ8„×ª­Ş.
+V
+java:S1128"4Remove this unused import 'com.ba.Entities.Product'.(Ç­¢­ûÿÿÿÿ8„×ª­Ş.
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(á“…¡ÿÿÿÿÿ8„×ª­Ş.
+b
+java:S4684>"@Replace this persistent entity with a simple POJO or DTO object.(„šŠ¸ÿÿÿÿÿ8„×ª­Ş.
+w
+java:S1128
+"URemove this unused import 'org.springframework.security.access.prepost.PreAuthorize'.(ˆ†×ùÿÿÿÿ8²°ÂãŞ.

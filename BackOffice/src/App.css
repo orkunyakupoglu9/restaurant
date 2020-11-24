@@ -1,0 +1,72 @@
+.App {
+  text-align: left;
+  
+}
+
+.Usersadd{
+
+  text-align: left;
+
+
+}
+
+.Login{
+
+  padding: 60px 0;
+  margin: 0 auto;
+  max-width: 320px;
+
+
+}
+
+
+.Input{
+
+  text-align: left;
+  text-decoration-line: underline;
+  
+}
+
+.Title {
+
+  text-align: center;
+  text-decoration: wavy;
+  text-shadow: #282c34;
+  font-size: large;
+  color: crimson;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  
+  }
+  .Info{
+
+    text-align: center;
+  }
+  
+
+
+
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

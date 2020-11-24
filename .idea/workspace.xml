@@ -2,33 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="98697270-d339-4a74-8ac9-7494b005b221" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Controllers/CategoryController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Controllers/InfoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Entities/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Repository/CategoryRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Service/CategoryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backoffice/src/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backoffice/src/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backoffice/src/.idea/src.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backoffice/src/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backoffice/src/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backoffice/src/Categories.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backoffice/src/Empty.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backoffice/src/Info.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backoffice/src/Login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backoffice/src/Product.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backoffice/src/Usersadd.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backoffice/src/history.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/Cart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/Login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/Tabs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/listproducts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Controllers/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Controllers/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Controllers/UsersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Controllers/UsersController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Entities/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Entities/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Repository/ProductRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Service/ProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Service/UsersService.java" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Service/UsersService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/src/main/resources/data.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/src/main/resources/schema.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/target/classes/com/ba/Controllers/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/target/classes/com/ba/Controllers/ProductController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/target/classes/com/ba/Controllers/UsersController.class" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/target/classes/com/ba/Controllers/UsersController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/target/classes/com/ba/Entities/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/target/classes/com/ba/Entities/Product.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/target/classes/com/ba/Repository/ProductRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/target/classes/com/ba/Repository/ProductRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/target/classes/com/ba/Service/ProductService.class" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/target/classes/com/ba/Service/ProductService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/target/classes/com/ba/Service/UsersService.class" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/target/classes/com/ba/Service/UsersService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/target/classes/com/ba/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/target/classes/com/ba/config/SecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/target/classes/data.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/target/classes/schema.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backoffice/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/backoffice/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backoffice/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/backoffice/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backoffice/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/backoffice/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backoffice/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/backoffice/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backoffice/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/backoffice/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -62,8 +64,11 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1kQ8XXIgZC3jhxrOGyeO5mn7YHN" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -136,7 +141,7 @@
       <workItem from="1605853047326" duration="25256000" />
       <workItem from="1606046151653" duration="3862000" />
       <workItem from="1606112085879" duration="25147000" />
-      <workItem from="1606201878131" duration="3459000" />
+      <workItem from="1606201878131" duration="6067000" />
     </task>
     <task id="LOCAL-00001" summary="RestApi deneme1">
       <created>1605641986578</created>
@@ -194,7 +199,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606116112440</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="RestApi deneme2">
+      <created>1606214794693</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1606214794693</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -214,6 +226,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="RestApi deneme1" />
     <MESSAGE value="RestApi deneme2" />
     <option name="LAST_COMMIT_MESSAGE" value="RestApi deneme2" />

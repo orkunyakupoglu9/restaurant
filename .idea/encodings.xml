@@ -3,7 +3,7 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/BackOffice" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/Client" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/RestApi" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/client" charset="UTF-8" />
   </component>
 </project>

@@ -2,35 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="98697270-d339-4a74-8ac9-7494b005b221" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/backoffice/src/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backoffice/src/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backoffice/src/.idea/src.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backoffice/src/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backoffice/src/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backoffice/src/Categories.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backoffice/src/Empty.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backoffice/src/Info.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backoffice/src/Login.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backoffice/src/Product.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backoffice/src/Usersadd.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backoffice/src/history.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/Cart.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/Login.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/Tabs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/listproducts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backoffice/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/backoffice/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backoffice/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/backoffice/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backoffice/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/backoffice/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backoffice/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/backoffice/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backoffice/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/backoffice/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackOffice/BackOffice.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackOffice/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/Client.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/pom.xml" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -61,7 +37,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/backoffice" />
   </component>
   <component name="ProjectId" id="1kQ8XXIgZC3jhxrOGyeO5mn7YHN" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -141,7 +117,7 @@
       <workItem from="1605853047326" duration="25256000" />
       <workItem from="1606046151653" duration="3862000" />
       <workItem from="1606112085879" duration="25147000" />
-      <workItem from="1606201878131" duration="6067000" />
+      <workItem from="1606201878131" duration="6812000" />
     </task>
     <task id="LOCAL-00001" summary="RestApi deneme1">
       <created>1605641986578</created>
@@ -206,7 +182,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606214794693</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="RestApi deneme2">
+      <created>1606222071741</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1606222071741</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

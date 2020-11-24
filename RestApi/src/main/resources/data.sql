@@ -1,8 +1,0 @@
-
-
-INSERT INTO USERS VALUES('admin','{noop}pass3',true);
-INSERT INTO USERS VALUES('user1','{noop}pass2',true);
-
-INSERT INTO AUTHORITIES VALUES('admin','ROLE_ADMIN');
-INSERT INTO AUTHORITIES VALUES('user1','ROLE_USER');
-

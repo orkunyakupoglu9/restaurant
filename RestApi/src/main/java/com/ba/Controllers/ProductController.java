@@ -30,7 +30,7 @@ public class ProductController {
         return service.getAllProducts();
     }
 
-    @GetMapping("/categories")
+    /*@GetMapping("/categories")
     public List<String> lisAllCategories()
     {
 
@@ -44,7 +44,7 @@ public class ProductController {
     {
 
         return service.listProductByCategory(category);
-    }
+    }*/
 
 
 

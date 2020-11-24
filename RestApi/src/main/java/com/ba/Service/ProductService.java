@@ -41,7 +41,7 @@ public class ProductService {
     }
 
 
-    public List<String> listAllCategories()
+    /*public List<String> listAllCategories()
     {
         List<String> categoryList=new ArrayList<>();
 
@@ -50,9 +50,9 @@ public class ProductService {
 
         return categoryList;
 
-    }
+    }*/
 
-    public List<Product>  listProductByCategory(String categoryName)
+    /*public List<Product>  listProductByCategory(String categoryName)
     {
         List<Product> productByCategory= new ArrayList<>();
 
@@ -60,7 +60,7 @@ public class ProductService {
 
         return productByCategory;
 
-    }
+    }*/
 
 
 

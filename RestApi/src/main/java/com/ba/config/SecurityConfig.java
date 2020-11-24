@@ -25,17 +25,16 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
 
+
         http.authorizeRequests().antMatchers("h2-console/**").permitAll();
         http.csrf().disable();
         http.headers().frameOptions().disable();
         http.authorizeRequests().antMatchers("/hi/user").access("hasAnyRole('USER','ADMIN')");
         http.authorizeRequests().antMatchers("/hi/admin").access("hasRole('ADMIN')");
-        http.authorizeRequests().antMatchers("/users/add").access("hasRole('ADMIN')");
+        //http.authorizeRequests().antMatchers("/users/add").access("hasRole('ADMIN')");
         //http.authorizeRequests().antMatchers("/product/add").access("hasRole('ADMIN')");
 
         http.httpBasic();
-
-
 
 
 
@@ -47,6 +46,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
+
 
         auth.jdbcAuthentication().dataSource(dataSource);
 

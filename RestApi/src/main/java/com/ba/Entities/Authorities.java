@@ -17,6 +17,11 @@ public class Authorities {
     public Authorities() {
     }
 
+    public Authorities(String username, String authority) {
+        this.username = username;
+        this.authority = authority;
+    }
+
     public String getUsername() {
         return username;
     }

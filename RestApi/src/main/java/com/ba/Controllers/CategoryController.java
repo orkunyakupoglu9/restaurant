@@ -1,10 +1,13 @@
 package com.ba.Controllers;
 
+import com.ba.DTO.CategoryDTO;
+import com.ba.DTO.ProductDTO;
 import com.ba.Entities.Category;
 import com.ba.Entities.Product;
 import com.ba.Repository.CategoryRepository;
 import com.ba.Repository.ProductRepository;
 import com.ba.Service.CategoryService;
+import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -30,9 +33,51 @@ public class CategoryController {
 
 
     @GetMapping("/list")
-    public List<Category> listAllCategories()
+    public List<CategoryDTO> listAllCategories()
     {
+
         return categoryService.getAllCategory();
+
+    }
+
+
+    @PostMapping("/add-category")
+    public String categoryAdd(@RequestBody CategoryDTO categoryDto)
+    {
+
+         categoryService.addCategory(categoryDto);
+
+         return categoryDto.toString();
+
+    }
+
+    @PostMapping("/add-product/{id}")
+    public String addProduct(@RequestBody ProductDTO productDto, @PathVariable Long id)
+    {
+
+        ModelMapper modelMapper = new ModelMapper();
+        // user here is a prepopulated User instance
+
+        Product product = modelMapper.map(productDto, Product.class);
+
+
+
+        Optional <Category> optionalCategory=categoryRepository.findById(id);
+        if(!optionalCategory.isPresent()) {
+            return "no category";
+        }
+
+        Category category1=optionalCategory.get();
+        category1.getProducts().add(product);
+
+        product.setCategory(category1);
+
+
+
+        categoryRepository.save(category1);
+
+        return category1.toString();
+
 
     }
 
@@ -56,47 +101,20 @@ public class CategoryController {
 
     }
 
+
+
+
+
     @GetMapping("/product/{id}")
     public Set<Product> getProductsById(@PathVariable Long id)
     {
         Optional<Category> optionalCategory=categoryRepository.findById(id);
 
-       return optionalCategory.get().getProducts();
+        return optionalCategory.get().getProducts();
 
 
     }
 
-
-
-
-
-    @PostMapping("/add-category")
-    public String categoryAdd(@RequestBody Category category)
-    {
-         categoryService.addCategory(category);
-
-         return category.toString();
-
-    }
-    @PostMapping("/add-product/{id}")
-    public String addProduct(@RequestBody Product product,@PathVariable Long id)
-    {
-        Optional <Category> optionalCategory=categoryRepository.findById(id);
-        if(!optionalCategory.isPresent()) {
-            return "no category";
-        }
-
-        Category category1=optionalCategory.get();
-        category1.getProducts().add(product);
-
-
-
-        categoryRepository.save(category1);
-
-        return category1.toString();
-
-
-    }
 
     @DeleteMapping("/delete/{id}")
     public String deleteCategory(@PathVariable Long id)

@@ -15,6 +15,10 @@ public class Product {
     private double price;
     private String description;
 
+    @ManyToOne
+    @JoinColumn(name="category_id")
+    private Category category;
+
     public Product() {
     }
 
@@ -56,7 +60,13 @@ public class Product {
         this.description = description;
     }
 
+    public Category getCategory() {
+        return category;
+    }
 
+    public void setCategory(Category category) {
+        this.category = category;
+    }
 
     @Override
     public String toString() {

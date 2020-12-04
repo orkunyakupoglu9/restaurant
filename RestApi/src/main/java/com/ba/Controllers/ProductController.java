@@ -1,7 +1,9 @@
 package com.ba.Controllers;
 
+import com.ba.DTO.ProductDTO;
 import com.ba.Entities.Product;
 import com.ba.Service.ProductService;
+import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
@@ -22,7 +24,7 @@ public class ProductController {
 
 
     @GetMapping("/list")
-    public List<Product> listAllProducts()
+    public List<ProductDTO> listAllProducts()
     {
 
 
@@ -30,33 +32,19 @@ public class ProductController {
         return service.getAllProducts();
     }
 
-    /*@GetMapping("/categories")
-    public List<String> lisAllCategories()
-    {
-
-       return service.listAllCategories();
-
-
-    }
-
-    @GetMapping("/categories/{category}")
-    public List<Product> listProductsByCategory(@PathVariable String category)
-    {
-
-        return service.listProductByCategory(category);
-    }*/
-
-
-
 
 
     @PostMapping("/add")
-    public Product addProduct(@RequestBody Product product)
+    public String addProduct(@RequestBody ProductDTO productDto)
     {
+        /*ModelMapper modelMapper = new ModelMapper();
+        // user here is a prepopulated User instance
 
-        service.addProduct(product);
+        Product product = modelMapper.map(productDto, Product.class);*/
 
-        return product;
+        service.addProduct(productDto);
+
+        return productDto.toString();
 
     }
 

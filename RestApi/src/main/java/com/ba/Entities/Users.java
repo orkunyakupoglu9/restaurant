@@ -7,9 +7,11 @@ import javax.persistence.*;
 public class Users {
 
 
-
     @Id
-    @Column(name="username",nullable = false)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private long user_id;
+
+    @Column(name="username")
     private String username;
 
 
@@ -21,6 +23,11 @@ public class Users {
     public Users() {
     }
 
+    public Users(String username, String password, boolean enabled) {
+        this.username = username;
+        this.password = password;
+        this.enabled = enabled;
+    }
 
     public String getUsername() {
         return username;
@@ -46,3 +53,5 @@ public class Users {
         this.enabled = enabled;
     }
 }
+
+

@@ -1,7 +1,9 @@
 package com.ba.Service;
 
+import com.ba.DTO.ProductDTO;
 import com.ba.Entities.Product;
 import com.ba.Repository.ProductRepository;
+import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -16,18 +18,41 @@ public class ProductService {
     private ProductRepository repository;
 
 
-    public List<Product> getAllProducts()
+
+
+    public List<ProductDTO> getAllProducts()
     {
+        ModelMapper modelMapper = new ModelMapper();
+        // user here is a prepopulated User instance
+        List<ProductDTO> productDTOList=new ArrayList<>();
 
+        for(long i=1L;i<=repository.count();i++) {
 
-        return repository.findAll();
+            ProductDTO productDto=modelMapper.map(repository.findById(i).get(),ProductDTO.class);
+            productDTOList.add(productDto);
+
+        }
+
+        return productDTOList;
 
     }
 
-    public void addProduct(Product product)
+
+
+
+    public String addProduct(ProductDTO productDto)
     {
+        ModelMapper modelMapper = new ModelMapper();
+        // user here is a prepopulated User instance
+
+        Product product=modelMapper.map(productDto,Product.class);
 
         repository.save(product);
+
+
+
+
+        return productDto.toString();
 
 
     }
@@ -39,34 +64,6 @@ public class ProductService {
 
         return "ID "+id+" is deleted";
     }
-
-
-    /*public List<String> listAllCategories()
-    {
-        List<String> categoryList=new ArrayList<>();
-
-        categoryList=(repository.getAllCategories());
-
-
-        return categoryList;
-
-    }*/
-
-    /*public List<Product>  listProductByCategory(String categoryName)
-    {
-        List<Product> productByCategory= new ArrayList<>();
-
-        productByCategory=repository.findCategory(categoryName);
-
-        return productByCategory;
-
-    }*/
-
-
-
-
-
-
 
 
 

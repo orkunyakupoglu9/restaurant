@@ -4,7 +4,6 @@ package com.ba.Entities;
 import javax.persistence.*;
 
 import java.sql.Timestamp;
-import java.util.ArrayList;
 
 @Entity
 @Table(name = "ORDERS")
@@ -29,6 +28,12 @@ public class Order {
 
     @Column(name="order_date")
     private Timestamp order_date = new Timestamp(System.currentTimeMillis());
+
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "table_id")
+    private Tables table;
+
+
 
 
     public Order() {
@@ -80,5 +85,11 @@ public class Order {
         this.payment_type = payment_type;
     }
 
+    public Tables getTable() {
+        return table;
+    }
 
+    public void setTable(Tables table) {
+        this.table = table;
+    }
 }

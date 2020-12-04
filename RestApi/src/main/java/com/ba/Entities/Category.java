@@ -1,7 +1,10 @@
 package com.ba.Entities;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
@@ -16,10 +19,10 @@ public class Category {
     private String description;
     private String image_url;
 
-    @OneToMany(
-            cascade = CascadeType.ALL
+    @JsonIgnore
+    @OneToMany(mappedBy = "category",
+            cascade=CascadeType.ALL
     )
-    @JoinColumn(name="category_id")
     private Set<Product> products;
 
     public Category() {

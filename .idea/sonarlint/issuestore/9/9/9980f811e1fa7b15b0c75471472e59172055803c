@@ -1,3 +1,13 @@
 
 `
-java:S5344!">Don't use the default "PasswordEncoder" relying on plain-text.(¢õæ•ûÿÿÿÿ8²²Û§Þ.
+java:S53443">Don't use the default "PasswordEncoder" relying on plain-text.(¢õæ•ûÿÿÿÿ8²²Û§Þ.
+b
+java:S1128"@Remove this unused import 'org.springframework.http.HttpMethod'.(Ê¨Ä¡øÿÿÿÿ8ãÇõ£á.
+{
+java:S1128"YRemove this unused import 'org.springframework.web.cors.UrlBasedCorsConfigurationSource'.(µ²Ýûùÿÿÿÿ8ãÇõ£á.
+g
+java:S1128"KRemove this unused import 'org.springframework.web.cors.CorsConfiguration'.(î¤·`8ãÇõ£á.
+W	java:S125""<This block of commented-out lines of code should be removed.(åâÀ8ãÇõ£á.
+‚
+java:S1128
+"`Remove this unused import 'org.springframework.security.web.authentication.logout.LogoutFilter'.(û¿öüÿÿÿÿ8ãÇõ£á.

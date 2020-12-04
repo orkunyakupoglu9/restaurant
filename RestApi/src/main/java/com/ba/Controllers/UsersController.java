@@ -1,11 +1,13 @@
 package com.ba.Controllers;
 
 
+import com.ba.DTO.UsersDTO;
 import com.ba.Entities.Authorities;
 import com.ba.Entities.Product;
 import com.ba.Entities.Users;
 import com.ba.Repository.AuthorityRepository;
 import com.ba.Service.UsersService;
+import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
@@ -35,7 +37,7 @@ public class UsersController {
     }
 
 
-    @GetMapping("/add/{username}/{password}")
+    /*@GetMapping("/add/{username}/{password}")
     public String addUser(@PathVariable String username,@PathVariable String password)
     {
         Users user=new Users();
@@ -53,14 +55,17 @@ public class UsersController {
 
         return "user created";
 
-    }
-
+    }*/
 
 
 
     @PostMapping("/add")
-    public Users UserAdd(@RequestBody Users user)
+    public Users UserAdd(@RequestBody UsersDTO userDto)
     {
+        ModelMapper modelMapper = new ModelMapper();
+        // user here is a prepopulated User instance
+
+        Users user = modelMapper.map(userDto, Users.class);
 
         usersService.addUser(user);
 
@@ -68,11 +73,11 @@ public class UsersController {
 
     }
 
-    @DeleteMapping("/delete/{username}")
-    public void UserDelete(@PathVariable String username)
+    @DeleteMapping("/delete/{id}")
+    public void UserDelete(@PathVariable Long id)
     {
 
-        usersService.deleteUser(username);
+        usersService.deleteUser(id);
 
     }
 

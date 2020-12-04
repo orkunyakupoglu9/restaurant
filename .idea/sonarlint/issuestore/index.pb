@@ -1,8 +1,4 @@
 
->
-Client/pom.xml,0\a\0a4c3742bc724bd9658ec7c94f6f621e2586d444
-B
-BackOffice/pom.xml,f\6\f600ed31689f5f938ef44cd72385aec07f8ce42f
 7
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
 ?
@@ -43,3 +39,17 @@ f
 6RestApi/src/main/java/com/ba/Entities/Authorities.java,9\2\92ba409b63f220a84be740ac4ad50bbf8b51f355
 m
 =RestApi/src/main/java/com/ba/Controllers/HelloController.java,4\a\4a907e208d17918a2d6e9844ac729b4bb5be66ef
+j
+:RestApi/src/main/java/com/ba/config/PortConfiguration.java,8\8\88df65eb3d72d677c5d28b3b7ff8b2f2a143ff93
+l
+<RestApi/src/main/java/com/ba/Controllers/InfoController.java,b\1\b1a7d998ef5948b99b6be8b4c518862570197c97
+p
+@RestApi/src/main/java/com/ba/Controllers/CategoryController.java,5\a\5abac2eed9cab90b19b82b27578e63d580a5db17
+p
+@RestApi/src/test/java/ControllerTest/CategoryControllerTest.java,d\6\d6c42dbdbf8e5c33dec50f64bf9bdee8b1a9e9f7
+g
+7RestApi/src/test/java/ServiceTest/OrderServiceTest.java,b\7\b7457cc3d5b5f85d66f0615ef81e691aaca2b77f
+i
+9RestApi/src/main/java/com/ba/Service/CategoryService.java,b\3\b3d6aa0a52184f1876a2bdfd8236c9d82296b138
+j
+:RestApi/src/test/java/ServiceTest/CategoryServiceTest.java,4\b\4b91439a6c15519b8874b2e39224aba398714caf

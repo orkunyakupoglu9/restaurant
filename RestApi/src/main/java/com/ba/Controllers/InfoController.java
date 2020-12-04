@@ -1,7 +1,10 @@
 package com.ba.Controllers;
 
 
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.core.env.Environment;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -31,11 +34,26 @@ public class InfoController {
     @Value("${logging.level.org.hibernate.type}")
     private String hibernateType;
 
+    @Value("${spring.profiles.active:Unknown}")
+    private String profile_active;
+
+    @Value("${spring.application.name}")
+    private String profile;
+
+
+
+
+    @Autowired
+    Environment env;
+
+
 
     @GetMapping("/server")
     public List<String> getServerInfo()
     {
         List<String> infoList=new ArrayList<>();
+
+        infoList.add(profile);
         infoList.add(serverPort);
         infoList.add(driver);
         infoList.add(ddlAuto);
@@ -46,10 +64,19 @@ public class InfoController {
         return infoList;
 
     }
+    /*@GetMapping("/mode")
+    public String showProfile()
+    {
+
+       env.getActiveProfiles();
 
 
 
 
+return "sa";
+
+
+    }*/
 
 
 

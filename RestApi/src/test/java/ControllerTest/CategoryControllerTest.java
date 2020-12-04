@@ -19,6 +19,7 @@ import java.util.List;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
+import static org.mockito.Matchers.any;
 import static org.mockito.Mockito.verify;
 
 @RunWith(MockitoJUnitRunner.class)
@@ -30,10 +31,12 @@ public class CategoryControllerTest {
     @Mock
     private CategoryRepository categoryRepository;
 
+    @Mock
     private CategoryService categoryService;
 
 
     private Category category=new Category();
+    private CategoryDTO categoryDto=new CategoryDTO();
 
     private List<Category> categoryList=new ArrayList<>();
 
@@ -51,7 +54,7 @@ public class CategoryControllerTest {
 
         ModelMapper modelMapper = new ModelMapper();
 
-        CategoryDTO categoryDto=modelMapper.map(category,CategoryDTO.class);
+        categoryDto=modelMapper.map(category,CategoryDTO.class);
 
         categoryDTOList.add(categoryDto);
 
@@ -62,19 +65,44 @@ public class CategoryControllerTest {
     public void shouldListAllCategories()
     {
 
-       // verify(categoryRepository).findAll();
+        verify(categoryService).getAllCategory();
 
 
-        Mockito.when(categoryService.getAllCategory()).thenReturn(categoryDTOList);
+       /* Mockito.when(categoryService.getAllCategory()).thenReturn(categoryDTOList);
 
         List<CategoryDTO> res=categoryController.listAllCategories();
 
 
         assertNotNull(res);
-        assertEquals(res,categoryDTOList);
+        assertEquals(res,categoryDTOList);*/
 
 
     }
+
+    @Test
+    public void shouldCategoryAdd()
+    {
+        /*Mockito.when(categoryRepository.save(any())).thenReturn(category);
+        verify(categoryRepository).save(category);*/
+
+        Mockito.when(categoryRepository.save(any())).thenReturn(category);
+
+        ModelMapper modelMapper = new ModelMapper();
+        // user here is a prepopulated User instance
+
+        CategoryDTO categoryDto=modelMapper.map(category,CategoryDTO.class);
+
+        String result=categoryController.categoryAdd(categoryDto);
+
+        assertNotNull(result);
+        assertEquals(result,categoryDto.toString());
+
+
+
+
+    }
+
+
 
 
 

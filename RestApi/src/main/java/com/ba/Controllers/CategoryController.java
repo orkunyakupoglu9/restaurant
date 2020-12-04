@@ -31,7 +31,6 @@ public class CategoryController {
     CategoryRepository categoryRepository;
 
 
-
     @GetMapping("/list")
     public List<CategoryDTO> listAllCategories()
     {

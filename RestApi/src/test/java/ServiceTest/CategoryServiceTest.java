@@ -65,19 +65,21 @@ public class CategoryServiceTest {
     @Test
     public void shouldGetAllCategory()
     {
+        Long id=1L;
 
        // Mockito.when(categoryRepository.findAll()).thenReturn(categoryDTOList);
        // Mockito.when(categoryService.getAllCategory()).thenReturn(categoryDTOList);
 
-        when(categoryRepository.count()).thenReturn(1L);
-        when(categoryRepository.findById(1L).get()).thenReturn(category);
+        when(categoryRepository.count()).thenReturn((long) 1);
+        when(categoryRepository.findById(id).get()).thenReturn(category);
+        categoryList.add(category);
 
 
         List<CategoryDTO> res=categoryService.getAllCategory();
 
 
         assertNotNull(res);
-        assertEquals(res.get(0),category);
+        assertEquals(res,categoryList);
 
 
     }

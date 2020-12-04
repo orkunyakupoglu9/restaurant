@@ -2,157 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="98697270-d339-4a74-8ac9-7494b005b221" name="Default Changelist" comment="RestApi deneme3">
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/b/4b91439a6c15519b8874b2e39224aba398714caf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/a/5abac2eed9cab90b19b82b27578e63d580a5db17" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/8/88df65eb3d72d677c5d28b3b7ff8b2f2a143ff93" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/1/b1a7d998ef5948b99b6be8b4c518862570197c97" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/3/b3d6aa0a52184f1876a2bdfd8236c9d82296b138" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/7/b7457cc3d5b5f85d66f0615ef81e691aaca2b77f" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/6/d6c42dbdbf8e5c33dec50f64bf9bdee8b1a9e9f7" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Controllers/TableCategoryController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/DTO/CategoryDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/DTO/OrderDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/DTO/ProductDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/DTO/TableCategoryDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/DTO/TablesDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/DTO/UsersDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Entities/TableCategory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Entities/Tables.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Repository/TableCategoryRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Repository/TableRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Service/TableCategoryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/config/PortConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/converter/OrdersConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/src/main/resources/application-dev.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/src/main/resources/application-prod.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/src/test/java/ControllerTest/CategoryControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/src/test/java/ServiceTest/CategoryServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/src/test/java/ServiceTest/OrderServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/src/test/java/ServiceTest/ProductServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/src/test/java/ServiceTest/TableCategoryServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/src/test/java/ServiceTest/UsersServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/target/RestApi-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/target/RestApi-1.0-SNAPSHOT.jar.original" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/target/classes/application-dev.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/target/classes/application-prod.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/target/classes/com/ba/Controllers/TableCategoryController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/target/classes/com/ba/DTO/CategoryDTO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/target/classes/com/ba/DTO/OrderDTO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/target/classes/com/ba/DTO/ProductDTO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/target/classes/com/ba/DTO/TableCategoryDTO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/target/classes/com/ba/DTO/TablesDTO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/target/classes/com/ba/DTO/UsersDTO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/target/classes/com/ba/Entities/TableCategory.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/target/classes/com/ba/Entities/Tables.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/target/classes/com/ba/Repository/TableCategoryRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/target/classes/com/ba/Repository/TableRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/target/classes/com/ba/Service/TableCategoryService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/target/classes/com/ba/config/PortConfiguration.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/target/classes/com/ba/converter/OrdersConverter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/target/maven-archiver/pom.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/target/test-classes/ControllerTest/CategoryControllerTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/target/test-classes/META-INF/RestApi.kotlin_module" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/target/test-classes/ServiceTest/CategoryServiceTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/target/test-classes/ServiceTest/OrderServiceTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/target/test-classes/ServiceTest/ProductServiceTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/target/test-classes/ServiceTest/TableCategoryServiceTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/target/test-classes/ServiceTest/UsersServiceTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backoffice/src/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backoffice/src/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backoffice/src/.idea/src.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backoffice/src/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backoffice/src/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backoffice/src/Categories.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backoffice/src/CategoryAdd.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backoffice/src/Empty.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backoffice/src/Info.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backoffice/src/Login.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backoffice/src/Navigation.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backoffice/src/Product.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backoffice/src/ProductAdd.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backoffice/src/Routes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backoffice/src/TableCategory.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backoffice/src/Tables.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backoffice/src/Users.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backoffice/src/Usersadd.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backoffice/src/history.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/Cart.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/Home.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/Login.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/Menu.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/Routes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/Tables.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/Tabs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/history.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/listproducts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/a/0a4c3742bc724bd9658ec7c94f6f621e2586d444" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/e/0ec6096200d0e0bbe388945cf4f52ea74a48301f" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/e/0ec6096200d0e0bbe388945cf4f52ea74a48301f" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/f/0f2004d28e7363c215d73b69b59173f5a5606880" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/f/0f2004d28e7363c215d73b69b59173f5a5606880" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/0/60003580e85399494094af2bbe90d9db58fc9b83" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/0/60003580e85399494094af2bbe90d9db58fc9b83" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/2/92ba409b63f220a84be740ac4ad50bbf8b51f355" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/2/92ba409b63f220a84be740ac4ad50bbf8b51f355" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/9/9980f811e1fa7b15b0c75471472e59172055803c" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/9/9980f811e1fa7b15b0c75471472e59172055803c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/d/bda988a428400b480baa0eaaf593566795433e03" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/d/bda988a428400b480baa0eaaf593566795433e03" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/8/d80bd4379dd66f2c2f0f745e79be423c6d01eec2" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/8/d80bd4379dd66f2c2f0f745e79be423c6d01eec2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/6/f600ed31689f5f938ef44cd72385aec07f8ce42f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/DTO/AuthoritiesDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RestApi/src/test/java/ControllerTest/OrderControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RestApi/src/test/java/ControllerTest/ProductControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RestApi/src/test/java/ControllerTest/TableCategoryControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RestApi/src/test/java/ControllerTest/UsersControllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackOffice/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/BackOffice/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BackOffice/src/Categories.js" beforeDir="false" afterPath="$PROJECT_DIR$/BackOffice/src/Categories.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BackOffice/src/Empty.js" beforeDir="false" afterPath="$PROJECT_DIR$/BackOffice/src/Empty.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BackOffice/src/Info.js" beforeDir="false" afterPath="$PROJECT_DIR$/BackOffice/src/Info.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BackOffice/src/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/BackOffice/src/Login.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BackOffice/src/Product.js" beforeDir="false" afterPath="$PROJECT_DIR$/BackOffice/src/Product.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BackOffice/src/Usersadd.js" beforeDir="false" afterPath="$PROJECT_DIR$/BackOffice/src/Usersadd.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackOffice/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/BackOffice/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/Client/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/Client/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client/src/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/Client/src/Login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/Client/src/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Controllers/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Controllers/CategoryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Controllers/InfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Controllers/InfoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Controllers/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Controllers/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Controllers/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Controllers/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Controllers/UsersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Controllers/UsersController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Entities/Authorities.java" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Entities/Authorities.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Entities/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Entities/Category.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Entities/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Entities/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Entities/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Entities/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Entities/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Entities/Users.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Repository/CategoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Repository/CategoryRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Repository/UsersRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Repository/UsersRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Service/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Service/CategoryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Service/OrderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Service/ProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Service/UsersService.java" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Service/UsersService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RestApi/src/test/java/ControllerTest/CategoryControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/src/test/java/ControllerTest/CategoryControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RestApi/src/test/java/ServiceTest/CategoryServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/src/test/java/ServiceTest/CategoryServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RestApi/target/classes/com/ba/Controllers/CategoryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/target/classes/com/ba/Controllers/CategoryController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/target/classes/com/ba/Controllers/InfoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/target/classes/com/ba/Controllers/InfoController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/target/classes/com/ba/Controllers/OrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/target/classes/com/ba/Controllers/OrderController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/target/classes/com/ba/Controllers/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/target/classes/com/ba/Controllers/ProductController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/target/classes/com/ba/Controllers/UsersController.class" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/target/classes/com/ba/Controllers/UsersController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/target/classes/com/ba/Entities/Authorities.class" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/target/classes/com/ba/Entities/Authorities.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/target/classes/com/ba/Entities/Category.class" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/target/classes/com/ba/Entities/Category.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/target/classes/com/ba/Entities/Order.class" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/target/classes/com/ba/Entities/Order.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/target/classes/com/ba/Entities/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/target/classes/com/ba/Entities/Product.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/target/classes/com/ba/Entities/Users.class" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/target/classes/com/ba/Entities/Users.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/target/classes/com/ba/Repository/UsersRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/target/classes/com/ba/Repository/UsersRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/target/classes/com/ba/Service/CategoryService.class" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/target/classes/com/ba/Service/CategoryService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/target/classes/com/ba/Service/OrderService.class" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/target/classes/com/ba/Service/OrderService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/target/classes/com/ba/Service/ProductService.class" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/target/classes/com/ba/Service/ProductService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/target/classes/com/ba/Service/UsersService.class" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/target/classes/com/ba/Service/UsersService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backoffice/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/backoffice/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backoffice/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/backoffice/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backoffice/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/backoffice/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backoffice/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/backoffice/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backoffice/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/backoffice/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RestApi/target/test-classes/ControllerTest/CategoryControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/target/test-classes/ControllerTest/CategoryControllerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RestApi/target/test-classes/ServiceTest/CategoryServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/target/test-classes/ServiceTest/CategoryServiceTest.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -161,7 +34,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageViewManager">
-    <option name="myElementSize" value="125" />
+    <option name="myElementSize" value="99" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -200,7 +73,7 @@
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
+    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/RestApi" />
@@ -208,7 +81,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="coverage" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -230,37 +103,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CategoryServiceTest.shouldGetAllCategory">
-    <configuration name="All in RestApi" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="RestApi" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CategoryControllerTest.shouldAddCategory" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="RestApi" />
-      <extension name="coverage" track_test_folders="true">
-        <pattern>
-          <option name="PATTERN" value="*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-        <pattern>
-          <option name="PATTERN" value="com.ba.Service.CategoryService" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ControllerTest" />
-      <option name="MAIN_CLASS_NAME" value="ControllerTest.CategoryControllerTest" />
-      <option name="METHOD_NAME" value="shouldAddCategory" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="PARAMETERS" value="" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CategoryControllerTest.shouldListAllCategories" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ServiceTest in RestApi">
+    <configuration name="CategoryControllerTest.shouldCategoryAdd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="RestApi" />
       <extension name="coverage">
         <pattern>
@@ -270,7 +114,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="ControllerTest" />
       <option name="MAIN_CLASS_NAME" value="ControllerTest.CategoryControllerTest" />
-      <option name="METHOD_NAME" value="shouldListAllCategories" />
+      <option name="METHOD_NAME" value="shouldCategoryAdd" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -291,7 +135,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CategoryServiceTest.shouldGetAllCategory" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ControllerTest in RestApi" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="RestApi" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ControllerTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ControllerTest" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServiceTest in RestApi" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="RestApi" />
       <extension name="coverage">
         <pattern>
@@ -300,9 +158,21 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ServiceTest" />
-      <option name="MAIN_CLASS_NAME" value="ServiceTest.CategoryServiceTest" />
-      <option name="METHOD_NAME" value="shouldGetAllCategory" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.ba.Service in RestApi" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="RestApi" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ba.Service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ba.Service" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -316,11 +186,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CategoryServiceTest.shouldGetAllCategory" />
-        <item itemvalue="JUnit.CategoryControllerTest.shouldListAllCategories" />
-        <item itemvalue="JUnit.All in RestApi" />
-        <item itemvalue="JUnit.CategoryControllerTest.shouldAddCategory" />
+        <item itemvalue="JUnit.ServiceTest in RestApi" />
         <item itemvalue="JUnit.CategoryServiceTest" />
+        <item itemvalue="JUnit.com.ba.Service in RestApi" />
+        <item itemvalue="JUnit.ControllerTest in RestApi" />
+        <item itemvalue="JUnit.CategoryControllerTest.shouldCategoryAdd" />
       </list>
     </recent_temporary>
   </component>
@@ -349,7 +219,7 @@
       <workItem from="1606892936019" duration="11995000" />
       <workItem from="1606976065969" duration="34841000" />
       <workItem from="1607062299025" duration="1390000" />
-      <workItem from="1607063726528" duration="5437000" />
+      <workItem from="1607063726528" duration="16180000" />
     </task>
     <task id="LOCAL-00001" summary="RestApi deneme1">
       <created>1605641986578</created>
@@ -428,7 +298,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606222714456</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="RestApi deneme3">
+      <created>1607069411392</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1607069411392</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -454,19 +331,36 @@
     <MESSAGE value="RestApi deneme3" />
     <option name="LAST_COMMIT_MESSAGE" value="RestApi deneme3" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/RestApi/src/main/java/com/ba/Service/CategoryService.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Restaurant$com_ba_Service_in_RestApi.ic" NAME="com.ba.Service in RestApi Coverage Results" MODIFIED="1607085000413" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.ba.Service.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/Restaurant$UsersServiceTest.ic" NAME="UsersServiceTest Coverage Results" MODIFIED="1607036230408" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>ServiceTest.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/Restaurant$CategoryServiceTest_shouldGetAllCategory.ic" NAME="CategoryServiceTest.shouldGetAllCategory Coverage Results" MODIFIED="1607068289949" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/Restaurant$CategoryControllerTest_shouldCategoryAdd.ic" NAME="CategoryControllerTest.shouldCategoryAdd Coverage Results" MODIFIED="1607072720704" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>ControllerTest.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Restaurant$CategoryServiceTest_shouldGetAllCategory.ic" NAME="CategoryServiceTest.shouldGetAllCategory Coverage Results" MODIFIED="1607071139648" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>ServiceTest.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/Restaurant$OrderServiceTest_shouldGetOrders.ic" NAME="OrderServiceTest.shouldGetOrders Coverage Results" MODIFIED="1607031514656" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/Restaurant$ServiceTest_in_RestApi.ic" NAME="ServiceTest in RestApi Coverage Results" MODIFIED="1607063430242" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>ServiceTest.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/Restaurant$CategoryControllerTest_shouldListAllCategories.ic" NAME="CategoryControllerTest.shouldListAllCategories Coverage Results" MODIFIED="1607065157083" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/Restaurant$CategoryControllerTest_shouldListAllCategories.ic" NAME="CategoryControllerTest.shouldListAllCategories Coverage Results" MODIFIED="1607070252415" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>ControllerTest.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Restaurant$ServiceTest_in_RestApi.ic" NAME="ServiceTest in RestApi Coverage Results" MODIFIED="1607085250333" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>ServiceTest.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/Restaurant$ProductServiceTest_shouldAddProduct.ic" NAME="ProductServiceTest.shouldAddProduct Coverage Results" MODIFIED="1607031974998" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Restaurant$UsersServiceTest_shouldAddUsers.ic" NAME="UsersServiceTest.shouldAddUsers Coverage Results" MODIFIED="1607035239720" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
@@ -477,6 +371,9 @@
     </SUITE>
     <SUITE FILE_PATH="coverage/Restaurant$UsersServiceTest_shouldDeleteUser.ic" NAME="UsersServiceTest.shouldDeleteUser Coverage Results" MODIFIED="1607035514116" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>ServiceTest.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Restaurant$ControllerTest_in_RestApi.ic" NAME="ControllerTest in RestApi Coverage Results" MODIFIED="1607072737872" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>ControllerTest.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/Restaurant$ProductServiceTest.ic" NAME="ProductServiceTest Coverage Results" MODIFIED="1606992503797" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Restaurant$ProductServiceTest_shouldDeleteProductById.ic" NAME="ProductServiceTest.shouldDeleteProductById Coverage Results" MODIFIED="1607031995698" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

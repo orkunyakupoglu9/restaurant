@@ -1,21 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="98697270-d339-4a74-8ac9-7494b005b221" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/BackOffice/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/BackOffice/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackOffice/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/BackOffice/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackOffice/src/Categories.js" beforeDir="false" afterPath="$PROJECT_DIR$/BackOffice/src/Categories.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackOffice/src/Empty.js" beforeDir="false" afterPath="$PROJECT_DIR$/BackOffice/src/Empty.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackOffice/src/Info.js" beforeDir="false" afterPath="$PROJECT_DIR$/BackOffice/src/Info.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackOffice/src/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/BackOffice/src/Login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackOffice/src/Product.js" beforeDir="false" afterPath="$PROJECT_DIR$/BackOffice/src/Product.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackOffice/src/Usersadd.js" beforeDir="false" afterPath="$PROJECT_DIR$/BackOffice/src/Usersadd.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackOffice/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/BackOffice/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/Client/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/Client/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/src/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/Client/src/Login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/Client/src/index.js" afterDir="false" />
-    </list>
+    <list default="true" id="98697270-d339-4a74-8ac9-7494b005b221" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -236,7 +222,7 @@
       <workItem from="1607973675897" duration="7337000" />
       <workItem from="1608234219311" duration="1720000" />
       <workItem from="1608377165159" duration="9666000" />
-      <workItem from="1608463171221" duration="16566000" />
+      <workItem from="1608463171221" duration="16844000" />
     </task>
     <task id="LOCAL-00001" summary="RestApi deneme1">
       <created>1605641986578</created>
@@ -336,7 +322,28 @@
       <option name="project" value="LOCAL" />
       <updated>1608499000082</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="RestApi deneme5">
+      <created>1608499206731</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1608499206731</updated>
+    </task>
+    <task id="LOCAL-00016" summary="RestApi deneme5">
+      <created>1608499233300</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1608499233300</updated>
+    </task>
+    <task id="LOCAL-00017" summary="RestApi deneme5">
+      <created>1608499355979</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1608499355979</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

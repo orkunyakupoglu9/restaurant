@@ -1,0 +1,13 @@
+
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(áïã„øÿÿÿÿ
+F
+java:S1481J"0Remove this unused "modelMapper" local variable.(Éè±
+U
+java:S1854J"?Remove this useless assignment to local variable "modelMapper".(Éè±
+P
+java:S3655L"5Call "waiter.isPresent()" before accessing the value.(Ö«òûÿÿÿÿ
+m
+java:S1128	"RRemove this unused import 'org.springframework.web.bind.annotation.DeleteMapping'.(­ìÎªşÿÿÿÿ
+l
+java:S1128
+"QRemove this unused import 'org.springframework.web.bind.annotation.PathVariable'.(¹ûñÅşÿÿÿÿ

@@ -1,0 +1,19 @@
+
+]javascript:S14813"<Remove the declaration of the unused 'addCategory' variable.(ä¿­Ãýÿÿÿÿ
+Kjavascript:S1128"*Remove this unused import of 'HashRouter'.(£ê’×ÿÿÿÿÿ
+@javascript:S1128"$Remove this unused import of 'Form'.(Ô¸€Ž
+Bjavascript:S1128"&Remove this unused import of 'Router'.(²ïË¤
+Ajavascript:S1128"%Remove this unused import of 'Route'.(ØùÙˆ
+Gjavascript:S1128"&Remove this unused import of 'Switch'.(ÏÁëþÿÿÿÿ
+Ijavascript:S1128"(Remove this unused import of 'products'.(Ñ—ÜÄüÿÿÿÿ
+Ajavascript:S1128	"&Remove this unused import of 'Navbar'.(ýûúJ
+Hjavascript:S1128"'Remove this unused import of 'NavLink'.(¬Ž†žÿÿÿÿÿ
+?javascript:S1128"#Remove this unused import of 'Col'.(þ”åæ
+Zjavascript:S18543"9Remove this useless assignment to variable "addCategory".(ä¿­Ãýÿÿÿÿ
+Djavascript:S1128"(Remove this unused import of 'usersadd'.(¡Ë¢·
+Ajavascript:S1128"%Remove this unused import of 'BsApp'.(áˆ€³
+Djavascript:S1128
+"#Remove this unused import of 'Nav'.(«ŸÓÄúÿÿÿÿ
+Njavascript:S11173"-'url' is already declared in the upper scope.(ä¿­Ãýÿÿÿÿ
+Kjavascript:S1128"*Remove this unused import of 'InputGroup'.(êýºþÿÿÿÿ
+Gjavascript:S1128"+Remove this unused import of 'FormControl'.( †ÄÌ

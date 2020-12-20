@@ -1,0 +1,15 @@
+
+X	java:S1250"<This block of commented-out lines of code should be removed.(©ƒå8ŸØ·åä.
+G
+java:S1068"1Remove this unused "BMP_EXTENSION" private field.(ì€Î
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(áïã„øÿÿÿÿ
+g
+java:S1128"LRemove this unused import 'org.springframework.web.multipart.MultipartFile'.(ôŸœÿÿÿÿÿ
+E
+java:S1068"/Remove this unused "BMP_CONTENT" private field.(Ò‚·ı
+G
+java:S1068"1Remove this unused "PNG_EXTENSION" private field.(¡ãîÆ
+G
+java:S1068"1Remove this unused "JPG_EXTENSION" private field.(± ë
+E
+java:S1068"/Remove this unused "PNG_CONTENT" private field.(‘º’£

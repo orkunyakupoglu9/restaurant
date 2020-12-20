@@ -1,0 +1,11 @@
+
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ºş‘Âüÿÿÿÿ
+h	java:S100%"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Œ»í¥úÿÿÿÿ
+o	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ç­ºêøÿÿÿÿ8˜áÿÜä.
+l	java:S116"WRename this field "file_content" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(½ÃÔâ
+j	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(˜àùÛ8˜áÿÜä.
+m	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(˜àùÛ8˜áÿÜä.
+b	java:S100)"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Æ÷¡3
+o	java:S116
+"SRename this field "media_id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ããÊÏ8˜áÿÜä.
+e	java:S117)"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Æ÷¡3

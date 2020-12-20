@@ -1,0 +1,5 @@
+
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(½æšÿÿÿÿÿ8 Â€Ìä.
+p	java:S116"TRename this field "waiter_id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ë¤¾Ş8×±şËä.
+n	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ºµ¬2
+o	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(½æšÿÿÿÿÿ8Š³‚Ìä.

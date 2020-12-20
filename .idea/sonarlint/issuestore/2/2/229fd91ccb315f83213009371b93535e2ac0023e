@@ -1,0 +1,20 @@
+
+o	java:S100)"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÙßÕÙÿÿÿÿÿ8»˜‚Ëä.
+o	java:S1003"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ªá¨¥ıÿÿÿÿ8ŞáƒËä.
+r	java:S117)"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÙßÕÙÿÿÿÿÿ8÷ şÊä.
+o	java:S1008"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(±ß¥Œûÿÿÿÿ8Éá„Ëä.
+o	java:S100$"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ß‡ÛÔüÿÿÿÿ8·”ıÊä.
+j	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(’áøã8¡éüÊä.
+o	java:S116"SRename this field "order_id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(é€®â8Ó¶îÊä.
+s	java:S116"WRename this field "payment_type" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(â‡öÖ8Ó¶îÊä.
+q	java:S116"URename this field "order_date" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(õÙÎë8Ó¶îÊä.
+w	java:S116"VRename this field "total_price" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ªÇ™ôÿÿÿÿÿ8Ó¶îÊä.
+o	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(áÆã¬şÿÿÿÿ8°¶ûÊä.
+r	java:S117$"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ß‡ÛÔüÿÿÿÿ8úÏúÊä.
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(áÆã¬şÿÿÿÿ8ŞøÊä.
+r	java:S1173"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ªá¨¥ıÿÿÿÿ8ŞÿşÊä.
+m	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(’áøã8³œúÊä.
+r	java:S1178"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(±ß¥Œûÿÿÿÿ8Ò§ÿÊä.
+n	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ºµ¬2
+r	java:S116"VRename this field "orders_name" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.( ‘»±8Ó¶îÊä.
+p	java:S116"TRename this field "waiter_id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ë¤¾Ş8Ó¶îÊä.

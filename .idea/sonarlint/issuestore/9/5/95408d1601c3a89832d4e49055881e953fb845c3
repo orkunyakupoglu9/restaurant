@@ -1,0 +1,12 @@
+
+j	java:S100H"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(²Í ›8÷ÉÃ¿ä.
+o	java:S100P"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Û¨€’ıÿÿÿÿ8‚ Ñßå.
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(µ¨¶µ
+r	java:S117P"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Û¨€’ıÿÿÿÿ8‚ Ñßå.
+t	java:S116"SRename this field "media_id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥ŠşÓùÿÿÿÿ8öÙĞßå.
+w	java:S116"VRename this field "category_id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÈÒïîúÿÿÿÿ8Œş«¿ä.
+J
+java:S1128".Remove this unused import 'java.util.HashSet'.(Ê‚êX8ö¹ä¸ä.
+m	java:S117H"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(²Í ›8÷ÉÃ¿ä.
+o	java:S100L"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Úû¼ïøÿÿÿÿ8‚ Ñßå.
+j	java:S100D"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğò³8÷ÉÃ¿ä.

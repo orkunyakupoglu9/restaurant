@@ -1,0 +1,19 @@
+
+@javascript:S1128"$Remove this unused import of 'Form'.(Ô¸€Ž
+Wjavascript:S1481"<Remove the declaration of the unused 'setRerender' variable.(¶ÃºC
+Ajavascript:S1128"%Remove this unused import of 'Route'.(ØùÙˆ
+Jjavascript:S1128")Remove this unused import of 'useEffect'.(ñµ¬Øúÿÿÿÿ
+Djavascript:S1128
+"#Remove this unused import of 'Nav'.(«ŸÓÄúÿÿÿÿ
+Ijavascript:S1128"(Remove this unused import of 'products'.(Ñ—ÜÄüÿÿÿÿ
+Hjavascript:S1128"'Remove this unused import of 'NavLink'.(¬Ž†žÿÿÿÿÿ
+Ijavascript:S1128"(Remove this unused import of 'MdDelete'.(ïšÅ£ùÿÿÿÿ
+Tjavascript:S1854"9Remove this useless assignment to variable "setRerender".(¶ÃºC
+Tjavascript:S1481"9Remove the declaration of the unused 'rerender' variable.(¶ÃºC
+Ajavascript:S1128	"&Remove this unused import of 'Navbar'.(ýûúJ
+Kjavascript:S1128"*Remove this unused import of 'HashRouter'.(£ê’×ÿÿÿÿÿ
+Qjavascript:S1854"6Remove this useless assignment to variable "rerender".(¶ÃºC
+Djavascript:S1128"(Remove this unused import of 'usersadd'.(¡Ë¢·
+Bjavascript:S1128"&Remove this unused import of 'Router'.(²ïË¤
+Gjavascript:S1128"&Remove this unused import of 'Switch'.(ÏÁëþÿÿÿÿ
+Gjavascript:S1128"&Remove this unused import of 'BiEdit'.(èÿÒìþÿÿÿÿ

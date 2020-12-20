@@ -1,0 +1,10 @@
+
+h	java:S100+"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(üÏ¶Ìÿÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(á“…¡ÿÿÿÿÿ
+Z
+java:S3655V"?Call "optionalCategory.isPresent()" before accessing the value.(µüô²üÿÿÿÿ
+a
+java:S3655c"?Call "optionalCategory.isPresent()" before accessing the value.(µüô²üÿÿÿÿ8ÙäÒ¹ä.
+
+java:S4144_"]Update this method so that its implementation is not identical to "listAllTables" on line 79.(á‘ûµøÿÿÿÿ8ÙäÒ¹ä.
+X	java:S125R"<This block of commented-out lines of code should be removed.(ìÕÀâ8ÙäÒ¹ä.

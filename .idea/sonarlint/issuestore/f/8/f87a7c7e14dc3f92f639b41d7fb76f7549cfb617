@@ -1,0 +1,10 @@
+
+Gjavascript:S1128"&Remove this unused import of 'BiEdit'.(èÿÒìþÿÿÿÿ
+Yjavascript:S1481"=Remove the declaration of the unused 'handleDelete' variable.(¬É¸Å
+Jjavascript:S1128")Remove this unused import of 'Component'.(ƒÈÝêøÿÿÿÿ
+Jjavascript:S1128")Remove this unused import of 'useEffect'.(ñµ¬Øúÿÿÿÿ
+Wjavascript:S930K"7This function expects 2 arguments, but 3 were provided.(§ìîðøÿÿÿÿ
+Vjavascript:S1854":Remove this useless assignment to variable "handleDelete".(¬É¸Å
+Ijavascript:S1128
+"(Remove this unused import of 'MdDelete'.(ïšÅ£ùÿÿÿÿ
+Djavascript:S1128"(Remove this unused import of 'useState'.(™Œæê

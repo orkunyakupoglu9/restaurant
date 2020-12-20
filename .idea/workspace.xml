@@ -1,180 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="98697270-d339-4a74-8ac9-7494b005b221" name="Default Changelist" comment="RestApi deneme4">
-      <change afterPath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Builder/CategoryBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Builder/MediaBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Builder/MediaDTOBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Builder/OrderBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Builder/ProductBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Builder/TableCategoryBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Builder/UsersBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Builder/WaiterBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Controllers/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Controllers/MediaController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Controllers/WaiterController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/DTO/MediaDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/DTO/RoleDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/DTO/WaiterDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Entities/Media.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Entities/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Entities/Waiter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Repository/MediaRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Repository/RoleRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Repository/WaiterRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Service/MediaService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Service/WaiterService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/config/UserDetailsImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/config/UserDetailsServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/src/main/resources/db-changelog/changes/create-authorities-table.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/src/main/resources/db-changelog/changes/create-category-table.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/src/main/resources/db-changelog/changes/create-category_products-table.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/src/main/resources/db-changelog/changes/create-media-table.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/src/main/resources/db-changelog/changes/create-order-table.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/src/main/resources/db-changelog/changes/create-product-table.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/src/main/resources/db-changelog/changes/create-role-table.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/src/main/resources/db-changelog/changes/create-tablecategory-table.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/src/main/resources/db-changelog/changes/create-tables-table.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/src/main/resources/db-changelog/changes/create-user_roles-table.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/src/main/resources/db-changelog/changes/create-users-table.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/src/main/resources/db-changelog/changes/create-waiter-table.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/src/main/resources/db-changelog/changes/desserts.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/src/main/resources/db-changelog/changes/discount.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/src/main/resources/db-changelog/changes/erbo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/src/main/resources/db-changelog/changes/garson.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/src/main/resources/db-changelog/changes/insert-authorities-table.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/src/main/resources/db-changelog/changes/insert-category-table.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/src/main/resources/db-changelog/changes/insert-category_products-table.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/src/main/resources/db-changelog/changes/insert-media-table.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/src/main/resources/db-changelog/changes/insert-order-table.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/src/main/resources/db-changelog/changes/insert-product-table.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/src/main/resources/db-changelog/changes/insert-role-table.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/src/main/resources/db-changelog/changes/insert-tablecategory-table.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/src/main/resources/db-changelog/changes/insert-tables-table.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/src/main/resources/db-changelog/changes/insert-user_roles-table.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/src/main/resources/db-changelog/changes/insert-users-table.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/src/main/resources/db-changelog/changes/insert-waiter-table.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/src/main/resources/db-changelog/changes/maindishes.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/src/main/resources/db-changelog/changes/penne.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/src/main/resources/db-changelog/changes/risotto.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/src/main/resources/db-changelog/changes/softdrinks.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/src/main/resources/db-changelog/changes/sprite.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/src/main/resources/db-changelog/changes/tbone.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/src/main/resources/db-changelog/master.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/src/test/java/ControllerTest/MediaControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/src/test/java/ControllerTest/WaiterControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/src/test/java/ServiceTest/MediaServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestApi/src/test/java/ServiceTest/WaiterServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backoffice/src/English.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backoffice/src/Media.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backoffice/src/TableCategoryAdd.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backoffice/src/Turkish.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backoffice/src/Waiter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backoffice/src/WaiterAdd.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backoffice/src/giphy.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backoffice/src/loading.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/.vscode/launch.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/LoadingBar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/Media.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/giphy.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/e/0ec6096200d0e0bbe388945cf4f52ea74a48301f" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/e/0ec6096200d0e0bbe388945cf4f52ea74a48301f" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/f/0f2004d28e7363c215d73b69b59173f5a5606880" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/f/0f2004d28e7363c215d73b69b59173f5a5606880" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/a/5abac2eed9cab90b19b82b27578e63d580a5db17" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/a/5abac2eed9cab90b19b82b27578e63d580a5db17" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/0/60003580e85399494094af2bbe90d9db58fc9b83" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/0/60003580e85399494094af2bbe90d9db58fc9b83" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/8/88df65eb3d72d677c5d28b3b7ff8b2f2a143ff93" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/f/8fc7c131e2819a1c8c96e8bf11416e605e2087ce" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/f/8fc7c131e2819a1c8c96e8bf11416e605e2087ce" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/2/9241da7d0bb50e898fe16b6197191b84e95a6ee9" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/2/9241da7d0bb50e898fe16b6197191b84e95a6ee9" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/9/9980f811e1fa7b15b0c75471472e59172055803c" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/9/9980f811e1fa7b15b0c75471472e59172055803c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/1/b1a7d998ef5948b99b6be8b4c518862570197c97" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/1/b1a7d998ef5948b99b6be8b4c518862570197c97" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/3/b3d6aa0a52184f1876a2bdfd8236c9d82296b138" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/3/b3d6aa0a52184f1876a2bdfd8236c9d82296b138" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/d/bda988a428400b480baa0eaaf593566795433e03" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/d/bda988a428400b480baa0eaaf593566795433e03" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/8/d80bd4379dd66f2c2f0f745e79be423c6d01eec2" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/8/d80bd4379dd66f2c2f0f745e79be423c6d01eec2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/2/e2256dfe33375859effaef1d9fc2a944ab945415" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/2/e2256dfe33375859effaef1d9fc2a944ab945415" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Controllers/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Controllers/CategoryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Controllers/InfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Controllers/InfoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Controllers/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Controllers/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Controllers/TableCategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Controllers/TableCategoryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Controllers/UsersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Controllers/UsersController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/DTO/CategoryDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/DTO/CategoryDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/DTO/OrderDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/DTO/OrderDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/DTO/ProductDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/DTO/ProductDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/DTO/TablesDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/DTO/TablesDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/DTO/UsersDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/DTO/UsersDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Entities/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Entities/Category.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Entities/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Entities/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Entities/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Entities/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Entities/TableCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Entities/TableCategory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Entities/Tables.java" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Entities/Tables.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Entities/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Entities/Users.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Repository/UsersRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Repository/UsersRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Run.java" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Run.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Service/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Service/CategoryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Service/OrderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Service/ProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Service/TableCategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Service/TableCategoryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Service/UsersService.java" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/Service/UsersService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/config/PortConfiguration.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/src/main/java/com/ba/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/src/test/java/ControllerTest/CategoryControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/src/test/java/ControllerTest/CategoryControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/src/test/java/ControllerTest/OrderControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/src/test/java/ControllerTest/OrderControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/src/test/java/ControllerTest/ProductControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/src/test/java/ControllerTest/ProductControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/src/test/java/ControllerTest/TableCategoryControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/src/test/java/ControllerTest/TableCategoryControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/src/test/java/ControllerTest/UsersControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/src/test/java/ControllerTest/UsersControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/src/test/java/ServiceTest/CategoryServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/src/test/java/ServiceTest/CategoryServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/src/test/java/ServiceTest/OrderServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/src/test/java/ServiceTest/OrderServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/src/test/java/ServiceTest/ProductServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/src/test/java/ServiceTest/ProductServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/src/test/java/ServiceTest/TableCategoryServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/src/test/java/ServiceTest/TableCategoryServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/src/test/java/ServiceTest/UsersServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/src/test/java/ServiceTest/UsersServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/target/classes/com/ba/Controllers/CategoryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/target/classes/com/ba/Controllers/CategoryController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/target/classes/com/ba/Controllers/InfoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/target/classes/com/ba/Controllers/InfoController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/target/classes/com/ba/Controllers/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/target/classes/com/ba/Controllers/ProductController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/target/classes/com/ba/Controllers/TableCategoryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/target/classes/com/ba/Controllers/TableCategoryController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/target/classes/com/ba/Controllers/UsersController.class" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/target/classes/com/ba/Controllers/UsersController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/target/classes/com/ba/DTO/CategoryDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/target/classes/com/ba/DTO/CategoryDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/target/classes/com/ba/DTO/OrderDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/target/classes/com/ba/DTO/OrderDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/target/classes/com/ba/DTO/ProductDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/target/classes/com/ba/DTO/ProductDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/target/classes/com/ba/DTO/TablesDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/target/classes/com/ba/DTO/TablesDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/target/classes/com/ba/DTO/UsersDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/target/classes/com/ba/DTO/UsersDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/target/classes/com/ba/Entities/Category.class" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/target/classes/com/ba/Entities/Category.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/target/classes/com/ba/Entities/Order.class" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/target/classes/com/ba/Entities/Order.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/target/classes/com/ba/Entities/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/target/classes/com/ba/Entities/Product.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/target/classes/com/ba/Entities/TableCategory.class" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/target/classes/com/ba/Entities/TableCategory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/target/classes/com/ba/Entities/Tables.class" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/target/classes/com/ba/Entities/Tables.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/target/classes/com/ba/Entities/Users.class" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/target/classes/com/ba/Entities/Users.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/target/classes/com/ba/Repository/UsersRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/target/classes/com/ba/Repository/UsersRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/target/classes/com/ba/Run.class" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/target/classes/com/ba/Run.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/target/classes/com/ba/Service/CategoryService.class" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/target/classes/com/ba/Service/CategoryService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/target/classes/com/ba/Service/OrderService.class" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/target/classes/com/ba/Service/OrderService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/target/classes/com/ba/Service/ProductService.class" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/target/classes/com/ba/Service/ProductService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/target/classes/com/ba/Service/TableCategoryService.class" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/target/classes/com/ba/Service/TableCategoryService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/target/classes/com/ba/Service/UsersService.class" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/target/classes/com/ba/Service/UsersService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/target/classes/com/ba/config/PortConfiguration.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/target/classes/com/ba/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/target/classes/com/ba/config/SecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/target/test-classes/ControllerTest/CategoryControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/target/test-classes/ControllerTest/CategoryControllerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/target/test-classes/ControllerTest/OrderControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/target/test-classes/ControllerTest/OrderControllerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/target/test-classes/ControllerTest/ProductControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/target/test-classes/ControllerTest/ProductControllerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/target/test-classes/ControllerTest/TableCategoryControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/target/test-classes/ControllerTest/TableCategoryControllerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/target/test-classes/ControllerTest/UsersControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/target/test-classes/ControllerTest/UsersControllerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/target/test-classes/ServiceTest/CategoryServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/target/test-classes/ServiceTest/CategoryServiceTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/target/test-classes/ServiceTest/OrderServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/target/test-classes/ServiceTest/OrderServiceTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/target/test-classes/ServiceTest/ProductServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/target/test-classes/ServiceTest/ProductServiceTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/target/test-classes/ServiceTest/TableCategoryServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/target/test-classes/ServiceTest/TableCategoryServiceTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestApi/target/test-classes/ServiceTest/UsersServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/RestApi/target/test-classes/ServiceTest/UsersServiceTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backoffice/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/backoffice/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backoffice/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/backoffice/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backoffice/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/backoffice/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backoffice/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/backoffice/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backoffice/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/backoffice/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.js" afterDir="false" />
+    <list default="true" id="98697270-d339-4a74-8ac9-7494b005b221" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/BackOffice/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/BackOffice/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackOffice/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/BackOffice/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackOffice/src/Categories.js" beforeDir="false" afterPath="$PROJECT_DIR$/BackOffice/src/Categories.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackOffice/src/Empty.js" beforeDir="false" afterPath="$PROJECT_DIR$/BackOffice/src/Empty.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackOffice/src/Info.js" beforeDir="false" afterPath="$PROJECT_DIR$/BackOffice/src/Info.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackOffice/src/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/BackOffice/src/Login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackOffice/src/Product.js" beforeDir="false" afterPath="$PROJECT_DIR$/BackOffice/src/Product.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackOffice/src/Usersadd.js" beforeDir="false" afterPath="$PROJECT_DIR$/BackOffice/src/Usersadd.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackOffice/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/BackOffice/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/Client/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/Client/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/src/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/Client/src/Login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/Client/src/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -396,7 +236,7 @@
       <workItem from="1607973675897" duration="7337000" />
       <workItem from="1608234219311" duration="1720000" />
       <workItem from="1608377165159" duration="9666000" />
-      <workItem from="1608463171221" duration="16282000" />
+      <workItem from="1608463171221" duration="16566000" />
     </task>
     <task id="LOCAL-00001" summary="RestApi deneme1">
       <created>1605641986578</created>
@@ -489,7 +329,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607088134254</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="RestApi deneme5">
+      <created>1608499000082</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1608499000082</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -514,7 +361,8 @@
     <MESSAGE value="RestApi deneme2" />
     <MESSAGE value="RestApi deneme3" />
     <MESSAGE value="RestApi deneme4" />
-    <option name="LAST_COMMIT_MESSAGE" value="RestApi deneme4" />
+    <MESSAGE value="RestApi deneme5" />
+    <option name="LAST_COMMIT_MESSAGE" value="RestApi deneme5" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Restaurant$OrderServiceTest_shouldGetOrders.ic" NAME="OrderServiceTest.shouldGetOrders Coverage Results" MODIFIED="1607194917372" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

@@ -1,0 +1,24 @@
+
+Fjavascript:S1128"%Remove this unused import of 'axios'.(ÒÁæÅúÿÿÿÿ
+@javascript:S1128"$Remove this unused import of 'Form'.(Ô¸€
+Jjavascript:S1128")Remove this unused import of 'useEffect'.(ñµ¬Øúÿÿÿÿ
+Ijavascript:S1128"(Remove this unused import of 'CardDeck'.(°½Ôôıÿÿÿÿ
+]javascript:S1481("<Remove the declaration of the unused 'setUsername' variable.(é™İ´ûÿÿÿÿ
+Zjavascript:S1481)"9Remove the declaration of the unused 'password' variable.(´¾šÖüÿÿÿÿ
+?javascript:S1128"#Remove this unused import of 'Row'.(¤»¸«
+]javascript:S1481)"<Remove the declaration of the unused 'setPassword' variable.(´¾šÖüÿÿÿÿ
+Zjavascript:S1854)"9Remove this useless assignment to variable "setPassword".(´¾šÖüÿÿÿÿ
+Bjavascript:S1128
+"&Remove this unused import of 'Button'.( ØÉº
+Zjavascript:S1481("9Remove the declaration of the unused 'username' variable.(é™İ´ûÿÿÿÿ
+Zjavascript:S1854("9Remove this useless assignment to variable "setUsername".(é™İ´ûÿÿÿÿ
+Ejavascript:S1128")Remove this unused import of 'CardGroup'.(¢³ÒÌ
+Djavascript:S1128"#Remove this unused import of 'Tab'.(„ë×¼üÿÿÿÿ
+Ejavascript:S1128")Remove this unused import of 'Component'.(ùŒ´ğ
+@javascript:S1128"$Remove this unused import of 'logo'.(¾‹õ«
+Ejavascript:S1128"$Remove this unused import of 'Card'.(€µÿóşÿÿÿÿ
+?javascript:S1128"#Remove this unused import of 'Col'.(ÂÑ©ß
+Wjavascript:S1854)"6Remove this useless assignment to variable "password".(´¾šÖüÿÿÿÿ
+Wjavascript:S1854("6Remove this useless assignment to variable "username".(é™İ´ûÿÿÿÿ
+Fjavascript:S1128"%Remove this unused import of 'Table'.(¦üÌáÿÿÿÿÿ
+Ejavascript:S1128	")Remove this unused import of 'ListGroup'.(¼üõ¡

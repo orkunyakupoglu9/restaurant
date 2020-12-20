@@ -12,6 +12,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class CategoryService {
@@ -26,17 +27,23 @@ public class CategoryService {
     public List<CategoryDTO> getAllCategory()
     {
         ModelMapper modelMapper = new ModelMapper();
-        // user here is a prepopulated User instance
+
         List<CategoryDTO> categoryDTOList=new ArrayList<>();
 
-        for(long i=1L;i<=categoryRepository.count();i++) {
+         List<Category> categories= categoryRepository.findAll();
 
-
-            CategoryDTO categoryDto=modelMapper.map(categoryRepository.findById(i).get(),CategoryDTO.class);
+        categories.forEach(category -> {
+            CategoryDTO categoryDto = modelMapper.map(category, CategoryDTO.class);
             categoryDTOList.add(categoryDto);
+        });
 
 
-        }
+       /* for(long i=1L;i<=categoryRepository.count();i++) {
+
+
+                CategoryDTO categoryDto = modelMapper.map(categoryRepository.findById(i).get(), CategoryDTO.class);
+                categoryDTOList.add(categoryDto);
+        }*/
 
         return categoryDTOList;
 
@@ -45,9 +52,11 @@ public class CategoryService {
     public String addCategory(CategoryDTO categoryDto)
     {
         ModelMapper modelMapper = new ModelMapper();
-        // user here is a prepopulated User instance
+
 
         Category category=modelMapper.map(categoryDto,Category.class);
+
+
 
         categoryRepository.save(category);
 

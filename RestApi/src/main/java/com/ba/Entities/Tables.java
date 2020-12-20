@@ -22,6 +22,8 @@ public class Tables {
         this.table_number = table_number;
     }
 
+
+
     public int getTable_number() {
         return table_number;
     }
@@ -37,4 +39,6 @@ public class Tables {
     public void setTable_id(long table_id) {
         this.table_id = table_id;
     }
+
+
 }

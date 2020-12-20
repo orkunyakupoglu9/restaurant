@@ -49,10 +49,12 @@ public class ProductController {
     }
 
     @DeleteMapping("/{id}")
-    public void deleteNews(@PathVariable Long id)
+    public String deleteProduct(@PathVariable Long id)
     {
 
         service.deleteProduct(id);
+
+        return "ID:"+id+"removed";
 
     }
 

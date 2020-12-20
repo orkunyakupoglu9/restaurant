@@ -79,39 +79,25 @@ public class TableCategoryController {
     public Set<Tables> listAllTables(@PathVariable Long id)
     {
         Optional<TableCategory> optionalCategory=tableCategoryRepository.findById(id);
-
-        int count=optionalCategory.get().getCount();
-
-        Set<Tables> tables = new HashSet<>();
+        //optionalCategory.get().getTables();
 
 
-        for(int i=1;i<=count;i++)
-        {
-            Tables table=new Tables(i);
-            tableRepository.save(table);
-            tables.add(table);
-            optionalCategory.get().setTables(tables);
-            //tables.add(String.valueOf(i));
 
-        }
-
-
-        return tables;
+        return optionalCategory.get().getTables();
 
     }
 
 
 
 
-
-    @GetMapping("/table/{id}")
+   /* @GetMapping("/table/{id}")
     public Set<Tables> getTablesById(@PathVariable Long id)
     {
         Optional<TableCategory> optionalCategory=tableCategoryRepository.findById(id);
 
         return optionalCategory.get().getTables();
 
-    }
+    }*/
 
 
 }

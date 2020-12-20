@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd
+         http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+<changeSet author="orkun.yakup" id="10-12-2020_14.13">
+
+    <insert tableName="category">
+        <column name="category_id" valueNumeric="1"/>
+        <column name="name" value="Main Dishes"/>
+        <column name="description" value="Our finest"/>
+        <column name="image_url" value="qwqwqwqwds"/>
+        <column name="media_id" valueNumeric="1"/>
+
+    </insert>
+
+    <insert tableName="category">
+        <column name="category_id" valueNumeric="2"/>
+        <column name="name" value="Soft Drinks"/>
+        <column name="description" value="Taste our cold brew"/>
+        <column name="image_url" value="qwqwqwqwds"/>
+        <column name="media_id" valueNumeric="2"/>
+
+
+    </insert>
+
+    <insert tableName="category">
+        <column name="category_id" valueNumeric="3"/>
+        <column name="name" value="Discount Products"/>
+        <column name="description" value="Weekly"/>
+        <column name="image_url" value="qwqwqwqwds"/>
+        <column name="media_id" valueNumeric="3"/>
+
+    </insert>
+
+    <insert tableName="category">
+        <column name="category_id" valueNumeric="4"/>
+        <column name="name" value="Desserts"/>
+        <column name="description" value="Yummy"/>
+        <column name="image_url" value="qwqwqwqwds"/>
+        <column name="media_id" valueNumeric="4"/>
+
+    </insert>
+
+
+
+
+</changeSet>
+</databaseChangeLog>

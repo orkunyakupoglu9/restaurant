@@ -17,13 +17,25 @@ public class Category {
 
     private String name;
     private String description;
+
+
     private String image_url;
 
+
     @JsonIgnore
-    @OneToMany(mappedBy = "category",
-            cascade=CascadeType.ALL
-    )
+    @ManyToMany()
+    @JoinTable(name="category_products",joinColumns = @JoinColumn(name="category_id"),inverseJoinColumns = @JoinColumn(name="product_id"))
     private Set<Product> products;
+
+
+    @JsonIgnore
+    @ManyToOne(cascade = CascadeType.MERGE)
+    @JoinColumn(name = "media_id")
+    private Media media;
+
+
+
+
 
     public Category() {
     }
@@ -75,6 +87,13 @@ public class Category {
         this.products = products;
     }
 
+    public Media getMedia() {
+        return media;
+    }
+
+    public void setMedia(Media media) {
+        this.media = media;
+    }
 
     @Override
     public String toString() {

@@ -2,6 +2,8 @@ package com.ba;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
+
 
 @SpringBootApplication
 public class Run {
@@ -13,5 +15,9 @@ public class Run {
         System.out.println("Hello World from Spring");
 
     }
+
+
+
+
 
 }

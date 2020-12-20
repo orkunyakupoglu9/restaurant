@@ -17,6 +17,7 @@ import org.modelmapper.ModelMapper;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 import static org.junit.Assert.*;
 import static org.mockito.Matchers.any;
@@ -60,26 +61,21 @@ public class CategoryServiceTest {
         }
 
 
-
-
     @Test
     public void shouldGetAllCategory()
     {
-        Long id=1L;
 
-       // Mockito.when(categoryRepository.findAll()).thenReturn(categoryDTOList);
-       // Mockito.when(categoryService.getAllCategory()).thenReturn(categoryDTOList);
+        Mockito.when(categoryRepository.findAll()).thenReturn(categoryList);
+        Mockito.when(categoryRepository.count()).thenReturn(1L);
+        Mockito.when(categoryRepository.findById(any())).thenReturn(Optional.of(category));
 
-        when(categoryRepository.count()).thenReturn((long) 1);
-        when(categoryRepository.findById(id).get()).thenReturn(category);
-        categoryList.add(category);
 
 
         List<CategoryDTO> res=categoryService.getAllCategory();
 
 
         assertNotNull(res);
-        assertEquals(res,categoryList);
+        assertEquals(res.get(0).getCategory_id(),categoryList.get(0).getCategory_id());
 
 
     }

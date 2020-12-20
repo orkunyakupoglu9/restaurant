@@ -19,6 +19,10 @@ public class OrderDTO {
 
     private Tables table;
 
+    private long waiter_id;
+
+
+
 
     public long getOrder_id() {
         return order_id;
@@ -66,5 +70,13 @@ public class OrderDTO {
 
     public void setTable(Tables table) {
         this.table = table;
+    }
+
+    public long getWaiter_id() {
+        return waiter_id;
+    }
+
+    public void setWaiter_id(long waiter_id) {
+        this.waiter_id = waiter_id;
     }
 }

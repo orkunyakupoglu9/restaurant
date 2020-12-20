@@ -25,8 +25,6 @@ public class InfoController {
     @Value("${spring.datasource.driverClassName}")
     private String driver;
 
-    @Value("${spring.jpa.hibernate.ddl-auto}")
-    private String ddlAuto;
 
     @Value("${spring.datasource.url}")
     private String datasourceUrl;
@@ -56,7 +54,6 @@ public class InfoController {
         infoList.add(profile);
         infoList.add(serverPort);
         infoList.add(driver);
-        infoList.add(ddlAuto);
         infoList.add(datasourceUrl);
         infoList.add(hibernateType);
 

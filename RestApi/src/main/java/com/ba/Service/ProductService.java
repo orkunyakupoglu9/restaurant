@@ -20,23 +20,34 @@ public class ProductService {
 
 
 
+
     public List<ProductDTO> getAllProducts()
     {
         ModelMapper modelMapper = new ModelMapper();
-        // user here is a prepopulated User instance
-        List<ProductDTO> productDTOList=new ArrayList<>();
 
-        for(long i=1L;i<=repository.count();i++) {
+
+         List<ProductDTO> productDTOList=new ArrayList<>();
+
+
+        List<Product> productList= repository.findAll();
+
+        productList.forEach(product -> {
+            ProductDTO productDto = modelMapper.map(product, ProductDTO.class);
+            productDTOList.add(productDto);
+        });
+
+
+
+        /*for(long i=1L;i<=repository.count();i++) {
 
             ProductDTO productDto=modelMapper.map(repository.findById(i).get(),ProductDTO.class);
             productDTOList.add(productDto);
 
-        }
+        }*/
 
         return productDTOList;
 
     }
-
 
 
 
@@ -60,7 +71,9 @@ public class ProductService {
 
     public String deleteProduct(@PathVariable Long id)
     {
+
         repository.deleteById(id);
+
 
         return "ID "+id+" is deleted";
     }

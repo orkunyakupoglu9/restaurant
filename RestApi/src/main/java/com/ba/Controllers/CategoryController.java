@@ -7,6 +7,7 @@ import com.ba.Entities.Product;
 import com.ba.Repository.CategoryRepository;
 import com.ba.Repository.ProductRepository;
 import com.ba.Service.CategoryService;
+import com.ba.Service.ProductService;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -14,6 +15,8 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.Optional;
 import java.util.Set;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 
 @CrossOrigin(origins = "*")
@@ -23,6 +26,9 @@ public class CategoryController {
 
     @Autowired
     CategoryService categoryService;
+
+    @Autowired
+    ProductService productService;
 
     @Autowired
     ProductRepository productRepository;
@@ -50,32 +56,39 @@ public class CategoryController {
 
     }
 
-    @PostMapping("/add-product/{id}")
-    public String addProduct(@RequestBody ProductDTO productDto, @PathVariable Long id)
+    @PostMapping("/add-product")
+    public String addProduct(@RequestBody ProductDTO productDto)
     {
 
         ModelMapper modelMapper = new ModelMapper();
-        // user here is a prepopulated User instance
+
 
         Product product = modelMapper.map(productDto, Product.class);
 
 
+        for(int i=0;i<productDto.getCategory_id().length;i++) {
 
-        Optional <Category> optionalCategory=categoryRepository.findById(id);
-        if(!optionalCategory.isPresent()) {
-            return "no category";
+            Optional<Category> optionalCategory = categoryRepository.findById(productDto.getCategory_id()[i]);
+
+            if (!optionalCategory.isPresent()) {
+                return "no category";
+            }
+
+
+            Category category1 = optionalCategory.get();
+            category1.getProducts().add(product);
+
+            product.setCategories(Stream.of(category1).collect(Collectors.toSet()));
+
+            productRepository.save(product);
+
+
+
+            categoryRepository.save(category1);
+
         }
 
-        Category category1=optionalCategory.get();
-        category1.getProducts().add(product);
-
-        product.setCategory(category1);
-
-
-
-        categoryRepository.save(category1);
-
-        return category1.toString();
+        return product.toString();
 
 
     }
@@ -99,8 +112,6 @@ public class CategoryController {
         return category.toString();
 
     }
-
-
 
 
 

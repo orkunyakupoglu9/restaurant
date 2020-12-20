@@ -29,6 +29,11 @@ public class Order {
     @Column(name="order_date")
     private Timestamp order_date = new Timestamp(System.currentTimeMillis());
 
+    @Column(name="waiter_id")
+    private long waiter_id;
+
+
+
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "table_id")
     private Tables table;
@@ -39,10 +44,11 @@ public class Order {
     public Order() {
     }
 
-    public Order(double totalprice, String payment_type, Timestamp order_date) {
+    public Order(double totalprice, String payment_type, Timestamp order_date,long waiter_id) {
         this.total_price = totalprice;
         this.payment_type = payment_type;
         this.order_date = order_date;
+        this.waiter_id=waiter_id;
     }
 
     public String getOrders_name() {
@@ -91,5 +97,13 @@ public class Order {
 
     public void setTable(Tables table) {
         this.table = table;
+    }
+
+    public long getWaiter_id() {
+        return waiter_id;
+    }
+
+    public void setWaiter_id(long waiter_id) {
+        this.waiter_id = waiter_id;
     }
 }

@@ -16,6 +16,7 @@ import org.modelmapper.ModelMapper;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
@@ -52,12 +53,14 @@ public class TableCategoryServiceTest {
     public void shouldGetAllTableCategories()
     {
         Mockito.when(tableCategoryRepository.findAll()).thenReturn(tableCategories);
+        Mockito.when(tableCategoryRepository.count()).thenReturn(1L);
+        Mockito.when(tableCategoryRepository.findById(any())).thenReturn(Optional.of(tableCategory));
 
 
         List<TableCategoryDTO> res=tableCategoryService.getAllTableCategory();
 
         assertNotNull(res);
-        assertEquals(res,tableCategories);
+        assertEquals(res.get(0).getTable_category_id(),tableCategories.get(0).getTable_category_id());
 
 
     }

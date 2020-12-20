@@ -15,6 +15,7 @@ import org.modelmapper.ModelMapper;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
@@ -49,13 +50,16 @@ public class OrderServiceTest {
     @Test
     public void shouldGetOrders()
     {
+
         Mockito.when(orderRepository.findAll()).thenReturn(orderList);
+        Mockito.when(orderRepository.count()).thenReturn(1L);
+        Mockito.when(orderRepository.findById(any())).thenReturn(Optional.of(order));
 
 
         List<OrderDTO> res=orderService.getOrders();
 
         assertNotNull(res);
-        assertEquals(res,orderList);
+        assertEquals(res.get(0).getOrder_id(),orderList.get(0).getOrder_id());
 
 
     }

@@ -1,6 +1,7 @@
 package com.ba.Controllers;
 
 
+import com.ba.DTO.RoleDTO;
 import com.ba.DTO.UsersDTO;
 import com.ba.Entities.Authorities;
 import com.ba.Entities.Product;
@@ -15,7 +16,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = "*",allowedHeaders = "*")
 @RestController
 @RequestMapping("/users")
 public class UsersController {
@@ -24,52 +25,37 @@ public class UsersController {
     @Autowired
     private UsersService usersService;
 
-    @Autowired
-    private AuthorityRepository authorityRepository;
+
 
     @GetMapping("/list")
-    public List<Users> listAllUsers()
+    public List<UsersDTO> listAllUsers()
     {
-
-
 
         return usersService.getAllUsers();
+
+
     }
 
-
-    /*@GetMapping("/add/{username}/{password}")
-    public String addUser(@PathVariable String username,@PathVariable String password)
+    @GetMapping("/roles-list")
+    public List<RoleDTO> listAllRoles()
     {
-        Users user=new Users();
-        user.setEnabled(true);
-        user.setPassword("{noop}"+password);
-        user.setUsername(username);
 
-        usersService.addUser(user);
+        return usersService.getAllRoles();
 
-        Authorities authorities=new Authorities();
-        authorities.setAuthority("ROLE_USER");
-        authorities.setUsername(username);
 
-        authorityRepository.save(authorities);
+    }
 
-        return "user created";
-
-    }*/
 
 
 
     @PostMapping("/add")
-    public Users UserAdd(@RequestBody UsersDTO userDto)
+    public String UserAdd(@RequestBody UsersDTO userDto)
     {
-        ModelMapper modelMapper = new ModelMapper();
-        // user here is a prepopulated User instance
 
-        Users user = modelMapper.map(userDto, Users.class);
 
-        usersService.addUser(user);
+        usersService.addUser(userDto);
 
-        return user;
+        return "user "+userDto.toString()+" added";
 
     }
 

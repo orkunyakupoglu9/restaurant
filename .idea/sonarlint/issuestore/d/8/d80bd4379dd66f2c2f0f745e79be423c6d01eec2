@@ -1,3 +1,6 @@
 
-s	java:S116"RRename this field "user_id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ôøÃóşÿÿÿÿ8ªÓ«á.
+j	java:S100F"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(…è¬¯8ƒş¯å.
+m	java:S117F"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(…è¬¯8ƒş¯å.
 {	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ºş‘Âüÿÿÿÿ8‡¡‹§Ş.
+s	java:S116"RRename this field "user_id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¿€¥·úÿÿÿÿ8ƒş¯å.
+o	java:S100B"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(åÏƒışÿÿÿÿ8ƒş¯å.

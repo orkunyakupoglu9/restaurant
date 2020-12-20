@@ -15,6 +15,7 @@ import org.modelmapper.ModelMapper;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
@@ -65,29 +66,19 @@ public class ProductServiceTest {
 
    }
 
-   /*@Test
-    public void shouldGetAllProduct()
-   {
-       Mockito.when(productRepository.findAll()).thenReturn(productList);
-       //categoryRepository.save(category);
-       List<Product> result=productService.getAllProducts();
 
-
-       assertNotNull(result);
-       assertEquals(result,productList);
-
-
-   }*/
    @Test
    public void shouldGetAllProduct()
    {
        Mockito.when(productRepository.findAll()).thenReturn(productList);
+       Mockito.when(productRepository.count()).thenReturn(1L);
+       Mockito.when(productRepository.findById(any())).thenReturn(Optional.of(product));
 
 
        List<ProductDTO> res=productService.getAllProducts();
 
        assertNotNull(res);
-       assertEquals(res,productList);
+       assertEquals(res.get(0).getId(),productList.get(0).getId());
 
 
    }
@@ -105,9 +96,6 @@ public class ProductServiceTest {
 
 
    }
-
-
-
 
 
 

@@ -1,11 +1,18 @@
 package com.ba.Entities;
 
 
+import com.ba.Repository.TableRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+
 import javax.persistence.*;
+import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 @Entity
+@Table(name = "TABLE_CATEGORY")
 public class TableCategory {
+
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -48,6 +55,8 @@ public class TableCategory {
     }
 
     public Set<Tables> getTables() {
+
+
         return tables;
     }
 
@@ -62,4 +71,7 @@ public class TableCategory {
     public void setCount(int count) {
         this.count = count;
     }
+
+
+
 }

@@ -1,6 +1,7 @@
 
-t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(áïã„øÿÿÿÿ
-R
-java:S3655""7Call "Optional#isPresent()" before accessing the value.(ÖóØÃúÿÿÿÿ
+X	java:S125)"<This block of commented-out lines of code should be removed.(ªõ…Ï8Çâä.
+Q
+java:S1128"/Remove this unused import 'java.util.Optional'.(¨˜ëİüÿÿÿÿ8îÎ†âä.
 O
 java:S1128"4Remove this unused import 'com.ba.Entities.Product'.(Ç­¢­ûÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(áïã„øÿÿÿÿ

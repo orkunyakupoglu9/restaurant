@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd
+         http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+    <changeSet author="orkun.yakup" id="4">
+
+        <createTable tableName="orders">
+            <column autoIncrement="true" name="order_id" type="long(10)">
+                <constraints primaryKey="true"/>
+            </column>
+
+            <column name="orders_name" type="VARCHAR(255)"/>
+            <column name="total_price" type="DOUBLE"/>
+            <column  name="payment_type" type="VARCHAR(255)"/>
+            <column defaultValueComputed="CURRENT_TIMESTAMP" name="order_date" type="TIMESTAMP"/>
+            <column  name="waiter_id" type="long(10)"/>
+
+            <column name="table_id" type="long(10)">
+                <constraints nullable="false" foreignKeyName="fk_order_table" references="tables(table_id)"/>
+            </column>
+
+
+        </createTable>
+
+        <rollback>
+            <dropTable tableName="orders"/>
+        </rollback>
+
+
+
+    </changeSet>
+</databaseChangeLog>

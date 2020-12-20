@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd
+         http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+    <changeSet author="orkun.yakup" id="13-12-2020_15.05">
+
+        <insert tableName="media">
+            <column name="media_id" valueNumeric="1"/>
+            <column name="name" value="maindishes"/>
+            <column name="file_content" valueBlobFile="./maindishes.jpg"/>
+
+
+        </insert>
+
+        <insert tableName="media">
+            <column name="media_id" valueNumeric="2"/>
+            <column name="name" value="softdrinks"/>
+            <column name="file_content" valueBlobFile="./softdrinks.jpg"/>
+
+
+        </insert>
+
+        <insert tableName="media">
+            <column name="media_id" valueNumeric="3"/>
+            <column name="name" value="discount"/>
+            <column name="file_content" valueBlobFile="discount.jpg"/>
+
+
+        </insert>
+
+        <insert tableName="media">
+            <column name="media_id" valueNumeric="4"/>
+            <column name="name" value="dessert"/>
+            <column name="file_content" valueBlobFile="desserts.jpg"/>
+
+
+        </insert>
+
+        <insert tableName="media">
+            <column name="media_id" valueNumeric="5"/>
+            <column name="name" value="erbo"/>
+            <column name="file_content" valueBlobFile="erbo.jpg"/>
+
+
+        </insert>
+
+        <insert tableName="media">
+            <column name="media_id" valueNumeric="6"/>
+            <column name="name" value="garson"/>
+            <column name="file_content" valueBlobFile="garson.jpg"/>
+
+        </insert>
+
+        <insert tableName="media">
+            <column name="media_id" valueNumeric="7"/>
+            <column name="name" value="penne"/>
+            <column name="file_content" valueBlobFile="penne.jpg"/>
+
+        </insert>
+
+        <insert tableName="media">
+            <column name="media_id" valueNumeric="8"/>
+            <column name="name" value="risotto"/>
+            <column name="file_content" valueBlobFile="risotto.jpg"/>
+
+        </insert>
+
+        <insert tableName="media">
+            <column name="media_id" valueNumeric="9"/>
+            <column name="name" value="sprite"/>
+            <column name="file_content" valueBlobFile="sprite.jpg"/>
+
+        </insert>
+
+        <insert tableName="media">
+            <column name="media_id" valueNumeric="10"/>
+            <column name="name" value="t-bone"/>
+            <column name="file_content" valueBlobFile="tbone.jpg"/>
+
+        </insert>
+
+
+
+
+
+    </changeSet>
+</databaseChangeLog>

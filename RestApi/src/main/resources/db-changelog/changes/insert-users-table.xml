@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd
+         http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+    <changeSet author="orkun.yakup" id="13-12-2020_00.46">
+
+        <insert tableName="users">
+            <column name="user_id" valueNumeric="1"/>
+            <column name="username" value="admin"/>
+            <column name="password" value="$2a$10$38fECjzAD7Ygt3/NvJ/R2.Oekv18qGILI9llrlY0yfrSjkDnFaTP2"/>
+            <column name="enabled" valueBoolean="true"/>
+
+        </insert>
+
+        <insert tableName="users">
+            <column name="user_id" valueNumeric="2"/>
+            <column name="username" value="user1"/>
+            <column name="password" value="$2a$10$upRSJooOUhUvXLauB.GD2O7JWCBu4NcghxwTfoJYJY1Yjz2N9g82S"/>
+            <column name="enabled" valueBoolean="true"/>
+
+        </insert>
+
+        <insert tableName="users">
+            <column name="user_id" valueNumeric="3"/>
+            <column name="username" value="user2"/>
+            <column name="password" value="$2a$10$IXdLmyzFLY3WUq8QWlq5/uVRxSBv.Lwz4KmUGR.o2S71kzeEPpSSW"/>
+            <column name="enabled" valueBoolean="true"/>
+
+        </insert>
+
+
+
+    </changeSet>
+</databaseChangeLog>

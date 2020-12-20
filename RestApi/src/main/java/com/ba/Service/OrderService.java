@@ -24,16 +24,26 @@ public class OrderService {
     public List<OrderDTO> getOrders()
     {
         ModelMapper modelMapper = new ModelMapper();
-        // user here is a prepopulated User instance
+
         List<OrderDTO> orderDTOList=new ArrayList<>();
 
-        for(long i=1L;i<=orderRepository.count();i++) {
+
+        List<Order> orderList= orderRepository.findAll();
+
+        orderList.forEach(order -> {
+            OrderDTO orderDto = modelMapper.map(order, OrderDTO.class);
+            orderDTOList.add(orderDto);
+        });
+
+
+
+        /*for(long i=1L;i<=orderRepository.count();i++) {
 
             OrderDTO orderDto=modelMapper.map(orderRepository.findById(i).get(),OrderDTO.class);
             orderDTOList.add(orderDto);
 
 
-        }
+        }*/
 
         return orderDTOList;
 

@@ -8,6 +8,8 @@ public class TablesDTO {
 
     private long table_category_id;
 
+    private String waiter;
+
 
     public long getTable_id() {
         return table_id;
@@ -32,4 +34,15 @@ public class TablesDTO {
     public void setTable_category_id(long table_category_id) {
         this.table_category_id = table_category_id;
     }
+
+    public String getWaiter() {
+        return waiter;
+    }
+
+    public void setWaiter(String waiter) {
+        this.waiter = waiter;
+
+    }
+
+
 }

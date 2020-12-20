@@ -5,24 +5,26 @@ import { useState } from 'react';
 import { useEffect } from 'react';
 import axios from 'axios';
 import { Button } from "react-bootstrap";
+import { Table } from "react-bootstrap";
 import './App.css';
 import { Col } from "react-bootstrap"
 import { MdDelete } from 'react-icons/md'
 import { BiEdit } from "react-icons/bi";
 import { DropdownButton } from "react-bootstrap"
 import { Dropdown } from "react-bootstrap"
+import history from "./history"
 
 
 
 function Products() {
 
 
-
+    useEffect(() => {
+        setTimeout(() => setLoading(false), 150)
+    }, [])
 
     var username = localStorage.getItem("localusername");
     var password = localStorage.getItem("localpassword");
-
-
     const token = Buffer.from(`${username}:${password}`, 'utf8').toString('base64');
 
 
@@ -45,11 +47,12 @@ function Products() {
 
 
 
-
-
     const [content, setContent] = useState();
+    const [contentt, setContentt] = useState([]);
 
-    //const [categories, setCategories] = useState();
+
+    const [loading, setLoading] = useState(true)
+
 
     const [description, setDescription] = useState();
 
@@ -62,31 +65,29 @@ function Products() {
 
 
         //alert(token)
-        // POST request using fetch with set headers
+
         const product = { name: namee, description: descriptionn, price: pricee };
 
-        //const category = { category_id: categoryy, description: "aaaaaaa" }
+
         //axios.post('http://localhost:8080/product/add', product)
         axios.post('http://localhost:8080/category/add-product/' + categoryy, product)
 
     }
 
-    const openinput = () => {
 
-        return (
-
-            <div className="Title">
-                SA</div>
-
-
-
-        )
-
-
-
-    }
 
     const choosecategory = (c) => {
+
+        var url = 'http://localhost:8080/category/product/' + c.category_id
+
+        fetch(url)
+            .then(response => response.json())
+            .then(data => {
+
+                setContentt(data);
+            }).catch(e => {
+                console.warn("e : ", e);
+            });
 
 
         setcategory(c.category_id)
@@ -94,8 +95,6 @@ function Products() {
 
 
     }
-
-
 
 
     const handleClick = (d) => {
@@ -109,13 +108,12 @@ function Products() {
     const handleDelete = (v) => {
 
 
-
-
         fetch('http://localhost:8080/product/' + v.id, { method: 'DELETE' })
 
     }
 
 
+    const [rerender, setRerender] = useState(false);
 
     var url = 'http://localhost:8080/product/list'
 
@@ -126,122 +124,87 @@ function Products() {
             .then(data => {
 
                 setContent(data);
-            }).catch(e => {
+            }).then(setRerender(true)).then(setLoading(true))
+            .catch(e => {
                 console.warn("e : ", e);
             });
-    }, []);
+    }, [rerender]);
 
     if (!content) {
         return null;
     }
 
-
-
-
+    console.warn(rerender)
 
 
     return (
 
 
+        <div id="wow" >
 
-
-        <div className="Input" >
-
-
-
-
-            <InputGroup size="default" >
-                <InputGroup.Prepend >
-                    <InputGroup.Text >Product Name:</InputGroup.Text>
-                </InputGroup.Prepend>
-                <Col xs="auto">
-                    <FormControl aria-label="Product Name" id="name" class="col-xs-3" />
-                </Col>
-            </InputGroup>
-            <br />
-            <InputGroup className="mb-3">
-                <InputGroup.Prepend>
-                    <InputGroup.Text>Description:</InputGroup.Text>
-                </InputGroup.Prepend>
-                <Col xs="auto">
-                    <FormControl
-                        aria-label="Description" id="description" />
-                </Col>
-            </InputGroup>
-
-            <InputGroup size="Default">
-                <InputGroup.Prepend>
-                    <InputGroup.Text >Price:</InputGroup.Text>
-                </InputGroup.Prepend>
-                <Col xs="auto">
-                    <FormControl aria-label="Price" id="price" />
-                </Col>
-            </InputGroup>
-            <br />
-            <InputGroup size="Default">
-                <InputGroup.Prepend>
-                    <InputGroup.Text>Category</InputGroup.Text>
-                </InputGroup.Prepend>
-                <Col xs="auto">
-                    <DropdownButton id="dropdown-item-button" title={categoryname}>
-                        {
-
-                            contentcategory.map(c => {
-                                return (
-
-
-                                    <Dropdown.Item as="button" onClick
-                                        ={() => choosecategory(c)}>{c.name}</Dropdown.Item>
-
-
-
-
-                                )
-
-                            })
-
-                        }
-                    </DropdownButton>
-
-                </Col>
-            </InputGroup>
+            <view>
+                {loading == true ? <div id="loading"> </div> : null}
+            </view>
 
             <br />
+            <br />
 
-
-
-            <Button onClick={() =>
-                AddButton(document.getElementById("name").value,
-                    document.getElementById("description").value,
-                    parseInt(document.getElementById("price").value), category)}>
-                Submit</Button>
+            <Button id="catadd" size="sm" variant="outline-success"
+                onClick={() => history.push('/productadd')}>ADD PRODUCT</Button>
 
 
             <br />
+            <br />
+            <br />
 
 
-            <table class="table table-dark" size="sm">
+            <Table Table striped bordered hover size="sm" variant="dark">
                 <tr>
-                    <th>#</th> <th>Name</th>
+
+                    <th> <label>Filter By:</label>
+
+                        <Col xs="auto">
+                            <DropdownButton variant="secondary" id="dropdown-item-button" title={categoryname}>
+                                {
+
+                                    contentcategory.map(c => {
+                                        return (
+
+
+                                            <Dropdown.Item as="button" onClick
+                                                ={() => choosecategory(c)}>{c.name}</Dropdown.Item>
+
+                                        )
+
+                                    })
+
+                                }
+                            </DropdownButton>
+
+                        </Col>
+                    </th>
+
+
+                    <th>Name</th>
                     <th>Price</th>
                     <th>Category</th>
                 </tr>
 
                 {
 
-                    content.map(v => {
+                    contentt.map(v => {
                         return (
 
                             <tr>
-                                <td> {v.id}</td> <td><label onClick={() => handleClick(v)}>{v.name}</label></td>
+                                <td></td>
+                                <td><label onClick={() => handleClick(v)}>{v.name}</label></td>
                                 <td><label>{v.price}$ </label></td>
 
-                                <td><label> {categoryname}</label></td>
+                                <td><label>{categoryname}</label></td>
 
 
+                                <td><BiEdit /> <MdDelete onClick={() => handleDelete(v)}> </MdDelete></td>
 
-                                <td><BiEdit /></td>
-                                <td><MdDelete onClick={() => handleDelete(v)}> </MdDelete></td>
                             </tr>
 
 
@@ -252,17 +215,52 @@ function Products() {
                     })
 
                 }
-            </table>
+            </Table>
 
-
-
-
-
-            {description}
-
+            <br />
             <br />
 
 
+
+            <Table Table striped bordered hover size="sm" variant="dark" >
+                <tr>
+                    <th>Img</th>
+                    <th>#</th> <th>Name</th>
+                    <th>Price</th>
+
+                </tr>
+
+                {
+
+                    content.map(v => {
+                        return (
+
+                            <tr>
+                                <td><img width="45" height="30"
+                                    src={"data:image/png;base64," + v.media.file_content} /></td>
+                                <td> {v.id}</td> <td><label onClick={() => handleClick(v)}>{v.name}</label></td>
+                                <td><label>{v.price}$ </label></td>
+
+
+
+
+
+                                <td><BiEdit /> <MdDelete onClick={() => handleDelete(v)}> </MdDelete></td>
+
+                            </tr>
+
+
+
+
+                        )
+
+                    })
+
+                }
+            </Table>
+
+
+            {description}
 
 
 
@@ -271,9 +269,6 @@ function Products() {
 
 
     )
-
-
-
 
 
 } export default Products

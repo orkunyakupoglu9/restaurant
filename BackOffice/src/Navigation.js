@@ -1,9 +1,8 @@
+import logo from './logo.svg';
 import './App.css';
 import { useState } from 'react';
 import { useEffect } from 'react';
 import axios from 'axios';
-//import "bootstrap/dist/bootstrap.min.css";
-import 'bootstrap/dist/css/bootstrap.min.css';
 import { BsTrash } from "react-icons/bs";
 import { InputGroup } from "react-bootstrap"
 import { FormControl } from "react-bootstrap"
@@ -21,24 +20,32 @@ import {
 import usersadd from "./Users"
 import products from "./Product"
 import { BrowserRouter as Router } from 'react-router-dom'
-import app from "./App"
-import { useHistory } from "react-router-dom";
-import { withRouter } from 'react-router-dom'
-import history from './history';
-import login from './Login';
-import categories from './Categories'
+import categories from "./Categories"
+import info from "./Info"
+import categoryadd from "./CategoryAdd"
+
+const Title = () => {
+
+    return (
+      <div className="Title">
+  
+        BackOffice
+  
+      </div>
+  
+    )
+  
+  
+  }
 
 
-
-function Empty() {
-
+function Navigation() {
 
     return (
 
-        <div>
+        <div classname="App">
 
-
-
+            <Title />
 
             <Navbar bg="light" expand="lg">
                 <Navbar.Brand href="/home">HomePage</Navbar.Brand>
@@ -49,16 +56,29 @@ function Empty() {
                         <Nav.Link href="/products">Products</Nav.Link>
                         <Nav.Link href="/reports">Reports</Nav.Link>
                         <NavDropdown title="Users" id="basic-nav-dropdown">
-                            <NavDropdown.Item href="/users/add">Add/Show</NavDropdown.Item>
+                            <NavDropdown.Item href="/users">Show</NavDropdown.Item>
                             <NavDropdown.Item href="/users/admin">Admin</NavDropdown.Item>
                             <NavDropdown.Item href="/users/user">User</NavDropdown.Item>
-
-
-
+                            
                         </NavDropdown>
+
+                        <NavDropdown title="Tables" id="basic-nav-dropdown">
+                            <NavDropdown.Item href="/tablecategory">Add Category</NavDropdown.Item>
+                            <NavDropdown.Item href="/addtable">Add Table to Category</NavDropdown.Item>
+                            </NavDropdown>
+
+                            <Nav.Link href="/waiters">Waiters</Nav.Link>
+
+                            <Nav.Link href="/media">Media</Nav.Link>
+
+
+
+                        
+
                     </Nav>
 
                     <Form inline>
+                        <Nav.Link href="/info">Info</Nav.Link>
                         <FormControl type="text" placeholder="Search" className="mr-sm-2" />
                         <Button variant="outline-success">Search</Button>
                     </Form>
@@ -66,32 +86,16 @@ function Empty() {
             </Navbar>
 
 
-            <br />
-
-
-
-
-
-            <Router>
-
-                <Switch>
-                    <Route path="/categories" component={categories} />
-                    <Route path="/login" component={login} />
-                    <Route path="/home" component={app} />
-                    <Route path="/products" component={products} />
-                    <Route path="/users/add" component={usersadd} />
-
-
-                </Switch>
-
-
-
-
-            </Router>
 
 
         </div>
 
-    );
 
-} export default Empty
+    )
+
+
+
+} export default Navigation
+
+
+

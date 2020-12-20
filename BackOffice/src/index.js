@@ -5,11 +5,17 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Login from './Login'
 import Empty from './Empty'
+import CategoryAdd from "./CategoryAdd"
+import Navigation from "./Navigation"
+import Routes from "./Routes"
+
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+
+    <Navigation />
+    <Routes />
   </React.StrictMode>,
   document.getElementById('root')
 );

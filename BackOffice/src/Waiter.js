@@ -1,43 +1,26 @@
-import './App.css';
+import React, { Component } from "react";
+import { InputGroup } from "react-bootstrap"
+import { FormControl } from "react-bootstrap"
 import { useState } from 'react';
 import { useEffect } from 'react';
 import axios from 'axios';
-import { InputGroup } from "react-bootstrap"
-import { FormControl } from "react-bootstrap"
-import { Form } from "react-bootstrap"
-import { Button } from "react-bootstrap"
-import { Table } from "react-bootstrap"
-import { Navbar } from "react-bootstrap"
-import { Nav } from "react-bootstrap"
-import {
-    Route,
-    NavLink,
-    HashRouter,
-    Switch
-} from "react-router-dom";
-import usersadd from "./Users"
-import products from "./Product"
-import { BrowserRouter as Router } from 'react-router-dom'
+import { Button } from "react-bootstrap";
+import { Table } from "react-bootstrap";
+import './App.css';
 import { Col } from "react-bootstrap"
 import { MdDelete } from 'react-icons/md'
 import { BiEdit } from "react-icons/bi";
-import { BsApp } from 'react-icons/bs';
+import { DropdownButton } from "react-bootstrap"
+import { Dropdown } from "react-bootstrap"
 import history from "./history"
 
-
-
-
-function Categories() {
-
-    const [loading, setLoading] = useState(true)
-
-
-    const [content, setContent] = useState([]);
-
+function Waiter() {
 
     const [rerender, setRerender] = useState(false);
 
+    const [content, setContent] = useState([]);
 
+    const [loading, setLoading] = useState(true)
 
 
     const handleDelete = (v) => {
@@ -45,40 +28,14 @@ function Categories() {
 
 
 
-        fetch('http://localhost:8080/category/delete/' + v.category_id, { method: 'DELETE' })
-
-
-    }
-
-    useEffect(() => {
-        setTimeout(() => setLoading(false), 150)
-    }, [])
-
-    const addCategory = (namee, descriptionn, url) => {
-
-        const category = { name: namee, description: descriptionn, image_url: url };
-
-
-
-        const token = sessionStorage.getItem("token");
-
-        axios.post('http://localhost:8080/category/add-category', category, {
-            headers:
-            {
-
-                'Authorization': `Basic ${token}`
-
-
-            }
-
-        });
+        fetch('http://localhost:8080/waiter/delete/' + v.waiter_id, { method: 'DELETE' })
 
 
     }
 
 
+    var url = 'http://localhost:8080/waiter/list'
 
-    var url = 'http://localhost:8080/category/list'
 
 
     useEffect(() => {
@@ -87,17 +44,18 @@ function Categories() {
             .then(data => {
 
                 setContent(data);
-            }).then(setRerender(true)).then(setLoading(true))
+            }).then(setRerender(true)).then(setLoading(false))
             .catch(e => {
                 console.warn("e : ", e);
             });
     }, [rerender]);
 
-    console.log(rerender)
+    console.warn(loading)
 
     if (!content) {
         return null;
     }
+
 
 
 
@@ -107,7 +65,7 @@ function Categories() {
         <div id="wow">
 
             <view>
-                {loading == true ? <div id="loading"> </div> : null}
+                {loading === true ? <div id="loading"> </div> : null}
             </view>
 
 
@@ -115,7 +73,7 @@ function Categories() {
             <br />
 
             <Button id="catadd" size="sm" variant="outline-success"
-                onClick={() => history.push('/categoryadd')}>ADD CATEGORY</Button>
+                onClick={() => history.push('/waiteradd')}>ADD WAITER</Button>
 
 
             <br />
@@ -129,7 +87,7 @@ function Categories() {
                     <tr>
                         <th>Img</th>
                         <th>#</th> <th>Name</th>
-                        <th>Description</th>
+                        <th>Surname</th>
 
 
 
@@ -142,15 +100,15 @@ function Categories() {
                             return (
 
                                 <tr>
+
                                     <td class="tds"> <img width="45" height="30"
                                         src={"data:image/png;base64," + v.media.file_content} /></td>
 
-
-                                    <td class="tds"> {v.category_id}</td>
+                                    <td class="tds"> {v.waiter_id}</td>
 
                                     <td class="tds">{v.name}</td>
 
-                                    <td class="tds"><label>{v.description} </label> </td>
+                                    <td class="tds"><label>{v.surname} </label> </td>
 
                                     <td> <span>  <BiEdit /> <MdDelete
                                         onClick={() => handleDelete(v)}></MdDelete></span></td>
@@ -169,8 +127,6 @@ function Categories() {
 
 
 
-
-
             </div>
 
 
@@ -178,10 +134,10 @@ function Categories() {
 
 
 
+
+
     )
 
 
 
-
-
-} export default Categories
+} export default Waiter

@@ -4,149 +4,191 @@ import { FormControl } from "react-bootstrap"
 import axios from 'axios';
 import { useState } from 'react';
 import { useEffect } from 'react';
+import { DropdownButton } from "react-bootstrap";
 import { Button } from "react-bootstrap";
+import { Dropdown } from "react-bootstrap";
 import './App.css';
 import { Col } from "react-bootstrap"
 import { MdDelete } from 'react-icons/md'
 import { BiEdit } from "react-icons/bi";
+import history from "./history"
+import DropdownItem from "react-bootstrap/esm/DropdownItem";
+import { Form } from "react-bootstrap"
+
+function UsersAdd() {
+
+    const [roleList, setRoleList] = useState([]);
+
+    const [role, setRole] = useState();
+
+    const [roleName, setRoleName] = useState();
+
+    const [roles, setRoles] = useState([]);
+
+
+    const chooserole = async (role) => {
+
+        let sendRoles = [...roles, role];
+
+        await setRoles(sendRoles);
+
+
+        //setRole(role);
+        setRoleName(role.name);
+
+    }
 
 
 
-const AddUser = (usernamee, passwordd) => {
+    const AddUser = (usernamee, passwordd, rolee) => {
+
+        let roleids = [];
+        //alert(categoryy)
+        for (var i = 0; i < rolee.length; i++) {
+
+            roleids.push(rolee[i].role_id);
+            alert(rolee[i].role_id)
+
+        }
 
 
-    // POST request using fetch with set headers
-    const user = { username: usernamee, password: passwordd, enabled: true };
-    axios.post('http://localhost:8080/users/add', user)
-
-}
-
-
-const handleDelete = (v) => {
+        // POST request using fetch with set headers
+        const user = {
+            username: usernamee, password: passwordd, enabled: true, role: rolee,
+            roles_id: roleids
+        };
 
 
-
-
-    fetch('http://localhost:8080/users/delete/' + v.username, { method: 'DELETE' })
-
-}
-
-
-
-
-function Usersadd() {
-
-    const [content, setContent] = useState();
-
-    var username = localStorage.getItem("localusername")
-    var password = localStorage.getItem("localpassword")
+        const token = sessionStorage.getItem("token");
 
 
 
+        axios.post('http://localhost:8080/users/add', user, {
+            headers:
+            {
+
+                'Authorization': `Basic ${token}`
 
 
-    var url = 'http://localhost:8080/users/list'
+            }
 
+        });
+
+
+
+        history.push('/users')
+
+    }
+
+
+    const handleDelete = (v) => {
+
+
+
+
+        fetch('http://localhost:8080/users/delete/' + v.username, { method: 'DELETE' })
+
+    }
 
     useEffect(() => {
-        fetch(url)
-            .then(response => response.json())
-            .then(data => {
 
-                setContent(data);
-            }).catch(e => {
-                console.warn("e : ", e);
-            });
-    }, []);
 
-    if (!content) {
-        return null;
-    }
+
+        var requestOptions = {
+
+            method: "GET",
+            redirect: "follow"
+
+        };
+
+        fetch("http://localhost:8080/users/roles-list", requestOptions)
+            .then(response => response.text())
+            .then(result => setRoleList(JSON.parse(result)))
+            .catch(error => console.log("error", error));
+    }, [])
+
+
 
 
 
 
 
     return (
-        <div>
 
+        <div id="inputform">
 
-            <InputGroup size="Default" className="mb-3">
-                <InputGroup.Prepend>
-                    <InputGroup.Text>Username:</InputGroup.Text>
-                </InputGroup.Prepend>
-                <Col xs="auto">
-                    <FormControl aria-label="UsserName" id="username" />
-                </Col>
-            </InputGroup>
-            <br />
-            <InputGroup className="mb-3">
-                <InputGroup.Prepend>
-                    <InputGroup.Text>Password:</InputGroup.Text>
-                </InputGroup.Prepend>
-                <Col xs="auto">
-                    <FormControl
-                        aria-label="Password" id="password" />
-                </Col>
-            </InputGroup>
-            <br />
-            <InputGroup size="Default">
-                <InputGroup.Prepend>
-                    <InputGroup.Text >Role:</InputGroup.Text>
-                </InputGroup.Prepend>
-                <Col xs="auto">
-                    <FormControl aria-label="Role" id="role" />
-                </Col>
-            </InputGroup>
             <br />
 
-            <Button onClick={() =>
+            <div >
+                <InputGroup.Text
+                >Username:</InputGroup.Text></div>
+
+            <InputGroup size="default" className="mb-3" >
+
+                <FormControl classname="inputs" id="username" class="col-xs-3" />
+
+            </InputGroup>
+
+
+            <div > <InputGroup.Text > Password:</InputGroup.Text>
+            </div>
+
+            <InputGroup size="default" className="mb-3" >
+                <FormControl classname="inputs"
+                    id="password" />
+
+            </InputGroup>
+
+
+
+            <Form.Group controlId="exampleForm.ControlSelect2">
+
+
+                <InputGroup.Text>Roles:</InputGroup.Text>
+
+                <Form.Control id="catego" as="select" multiple>
+                    {
+
+                        roleList.map(r => {
+                            return (
+
+
+
+
+                                <option as="button" onClick
+                                    ={() => chooserole(r)}>{r.name}
+                                </option>
+
+
+                            )
+
+                        })
+                    }
+
+
+                </Form.Control>
+            </Form.Group>
+
+
+
+            <br />
+
+
+
+            <Button id="submit" onClick={() =>
                 AddUser(document.getElementById("username").value,
                     document.getElementById("password").value,
-                    document.getElementById("role").value)}>
+                    roles)
+            }>
                 Submit</Button>
 
 
-            <table class="table table-dark" size="sm">
-                <tr>
-                    <th>Username</th>
-                    <th>Password</th>
-
-                </tr>
-
-                {
-
-                    content.map(v => {
-                        return (
-
-                            <tr>
-                                <td>{v.username}</td>
-                                <td><label>{v.password} </label></td>
-
-
-
-                                <td><BiEdit /></td>
-                                <td><MdDelete onClick={() => handleDelete(v)}></MdDelete></td>
-                            </tr>
-
-
-
-
-                        )
-
-                    })
-
-                }
-            </table>
-
-
-
-
         </div>
+
 
 
     )
 
 
 
-} export default Usersadd
+} export default UsersAdd

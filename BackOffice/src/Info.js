@@ -19,7 +19,7 @@ import {
     HashRouter,
     Switch
 } from "react-router-dom";
-import usersadd from "./Usersadd"
+import usersadd from "./Users"
 import products from "./Product"
 import { BrowserRouter as Router } from 'react-router-dom'
 import app from "./App"
@@ -29,6 +29,8 @@ import categories from './Categories'
 function Info() {
 
     const [content, setContent] = useState([]);
+
+    const [profile, setProfile] = useState();
 
     var url = "http://localhost:8080/info/server"
 
@@ -48,6 +50,19 @@ function Info() {
         return null;
     }
 
+    var url2 = "http://localhost:8080/info/mode"
+
+
+    fetch(url)
+        .then(response => response.json())
+        .then(data => {
+
+            setProfile(data);
+        }).catch(e => {
+            console.warn("e : ", e);
+        });
+
+
 
 
 
@@ -58,10 +73,18 @@ function Info() {
 
         <div>
 
+            <title>{profile}</title>
+
+
+
+
+
             <Table>
 
 
                 <tr>
+                    <th> Profile</th>
+
                     <th> Server</th>
 
                     <th> Driver</th>
@@ -95,6 +118,9 @@ function Info() {
                 </tr>
 
             </Table>
+
+
+
 
 
 

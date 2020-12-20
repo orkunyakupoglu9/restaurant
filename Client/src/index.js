@@ -5,10 +5,15 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Login from './Login'
 import 'semantic-ui-css/semantic.min.css'
+import Menu from './Menu'
+import Home from "./Home"
+import Routes from "./Routes"
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Home />
+    <Routes />
+
   </React.StrictMode>,
   document.getElementById('root')
 );

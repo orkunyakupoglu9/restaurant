@@ -4,6 +4,16 @@
   position: relative;
 }
 
+#loading {
+  background: url('giphy.gif') no-repeat center center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 9999999;
+}
+
 .Title {
 
 text-align: center;
@@ -48,50 +58,198 @@ font-family: Georgia, 'Times New Roman', Times, serif;
 
 
 }
-.BiMenu{
+.Home{
   text-align: right;
 }
+.Menu{
+  text-align: center;
+  margin-top: 60px 0;
+  margin-bottom: 60px;
+}
+.ShowTable{
 
+  text-align: right;
 
-
-
-
-
-
-
-
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.headers{
+
+  text-align: left;
+  font-size: 150%;
+  padding-top: 5%;
+  margin-top: 5%;
+  margin-left: 8%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.cards{
+
+
+  text-align: center;
+  font-size: 150%;
+  padding-top: 2%;
+  margin-top: 2%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ 
+  
+  
 }
 
-.App-link {
-  color: #61dafb;
+.shoppingcart{
+
+  text-align: left;
+  font-size: 150%;
+  padding-top: 5%;
+  margin-top: 5%;
+  margin-left: 11%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.categoryinside{
+
+
+
+margin-left: 15%;
+
+
+
+
+
 }
+
+#tablecart{
+
+  margin-left: 20%;
+
+
+
+}
+
+
+
+.cardsinside{
+
+  margin-left: 10%;
+  height: 1000px;
+  border: 1px ghostwhite;
+  display: inline-block;
+
+
+
+
+}
+
+#categorynames{
+
+  size: 5em;
+  color: black;
+  font-family: cursive;
+
+
+}
+
+
+
+
+#list{
+
+  
+  width: 150px;
+  height: 400px;
+  border: 5px black solid;
+  /* padding: 40px; */
+  background-color: crimson;
+  
+  padding-right: 5px;
+  padding-left: 5px;
+  
+  padding-bottom: 10px;
+
+  margin-left: 20px;
+
+  text-align: center;
+
+  overflow: auto;
+
+  display: inline-block;
+
+
+}
+
+#tablecart{
+
+  overflow: auto;
+  height: 400px;
+  border: 2px black solid;
+  display: inline-block;
+  
+
+
+
+
+}
+
+#cart{
+
+
+
+  text-align: right;
+
+  overflow: auto;
+
+  display: inline-block;
+
+  
+  /* padding: 40px; */
+
+}
+
+#categoryelement{
+
+  
+
+  text-align: left;
+  display: inline;
+  width: 70%;
+  
+  
+
+}
+
+
+
+
+
+#cardss{
+
+  display: inline-block;
+  
+  
+
+
+}
+
+.justify-content-md-center{
+
+  display: inline-block;
+
+
+}
+
+
+
+#inputGroup-sizing-lg{
+
+  text-align: center;
+  size: 50px;
+
+
+}
+
+
+
+
+

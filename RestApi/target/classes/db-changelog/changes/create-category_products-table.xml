@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd
+         http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+    <changeSet author="orkun.yakup" id="9">
+
+        <createTable tableName="category_products">
+            <column autoIncrement="true" name="category_id" type="long(10)">
+                <constraints primaryKey="true" nullable="false" foreignKeyName="fk_category_id" references="category(category_id)"/>
+            </column>
+            <column autoIncrement="true" name="product_id" type="long(10)">
+                <constraints primaryKey="true" nullable="false" foreignKeyName="fk_product_id" references="product(id)"/>
+            </column>
+
+
+
+
+        </createTable>
+
+        <rollback>
+            <dropTable tableName="category_products"/>
+        </rollback>
+
+
+
+    </changeSet>
+</databaseChangeLog>

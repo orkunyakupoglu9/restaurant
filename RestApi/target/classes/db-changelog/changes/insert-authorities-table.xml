@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd
+         http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+    <changeSet author="orkun.yakup" id="07-12-2020_16.34">
+
+        <insert tableName="authorities">
+            <column name="id" valueNumeric="1"/>
+            <column name="username" value="admin"/>
+            <column name="authority" value="ROLE_ADMIN"/>
+
+
+        </insert>
+
+        <insert tableName="authorities">
+            <column name="id" valueNumeric="2"/>
+            <column name="username" value="user1"/>
+            <column name="authority" value="ROLE_USER"/>
+
+
+        </insert>
+
+
+    </changeSet>
+</databaseChangeLog>
